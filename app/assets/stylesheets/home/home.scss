@@ -1,0 +1,49 @@
+/*Tela de Carregamento*/
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    z-index: 9999;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes colorizeText {
+    0% { color: transparent; }
+    100% { color: rgba(217, 8, 168, 0.75); }
+}
+
+.loading-text {
+    font-family: cursive;
+    font-size: 160px;
+    color: transparent; /* Começa transparente */
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    animation: typing 2.5s steps(50, end) forwards, 
+               blink-caret .50s step-end infinite, 
+               colorizeText 2s forwards; /* Adicionado para colorir o texto */
+    -webkit-text-stroke: 3.5px rgba(70, 186, 244, 0.871);
+}
+
+/*footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+}
+*/
