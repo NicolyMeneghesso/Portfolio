@@ -41,18 +41,15 @@
 
 .sidenav {
     position: fixed;
-    top: 70px;
     overflow-x: hidden;
     z-index: 1;
-    transition: 0.5s;
-    width: 0; 
+    transition: width 0.5s;
+    top: 70px;
     right: 0;
-    background-color: rgb(13, 11, 13);
+    width: 0;
     padding-top: 36px; 
+    background-color: rgb(13, 11, 13);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    display: none;
-
 
     .sidenav a {
         padding: 5px 5px 5px 20px;  
@@ -79,32 +76,43 @@
     }
 }
 
-.github {
-    background-color: rgb(2, 2, 2);
-    height: 91vh;
-    font-size: 50px;
+.navbar-nav {
+    float: right;   
     margin-top: -36px;
-    padding-left: 30px;
-}
+    padding-top: 5px;
+    font-size: 30px;
+    height: 100vh;
+    width: 48vh;
+    justify-content: flex-start;
 
-.linkedin {
-    background-color: rgb(6, 80, 192);
-    height: 91vh;
-    font-size: 50px;
-    margin-top: -36px;
-    padding-left: 30px;
+    .nav-link {
+        padding-left: 15px;
+        padding-right: 2px;
+    }
 }
 
 .col {
-    float: left;
-    width: 200px;
-}
+    float: right;
+    height: 100vh;
+    margin-top: -36px;
+    font-size: 40px;
+    text-align: center;
 
+    .github {
+        background-color: rgb(2, 2, 2);
+        width: 15vh;
+    }
+
+    .linkedin {
+        background-color: rgb(6, 80, 192);
+        width: 15vh;
+    }
+}
+        
 .vert-text {
     writing-mode: vertical-lr;
     transform: rotate(180deg); 
     text-align: center;
-    width: 150px;
 }
 
 
