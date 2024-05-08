@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
           // Ajuste a largura do sidenav e o posicionamento do card
           if (sidenav.style.width === "0px" || sidenav.style.width === "") {
-              sidenav.style.width = "600px" // Abre o sidenav
+              sidenav.style.width = "570px" // Abre o sidenav
           } else {
               sidenav.style.width = "0px" // Fecha o sidenav
           }

@@ -43,32 +43,10 @@
     position: fixed;
     overflow-x: hidden;
     z-index: 1;
-    transition: width 0.5s;
     top: 70px;
     right: 0;
     width: 0;
     padding-top: 36px; 
-    background-color: rgb(13, 11, 13);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    .sidenav a {
-        padding: 5px 5px 5px 20px;  
-        text-decoration: none;
-        color: rgb(72, 72, 72);
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-        color: rgb(241, 241, 241);
-    }
-    
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        left: 25px;
-        margin-left: 50px;
-    }
     
     @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
@@ -91,12 +69,11 @@
     }
 }
 
-.col {
+.sidebar-items {
     float: right;
     height: 100vh;
     margin-top: -36px;
     font-size: 40px;
-    text-align: center;
 
     .github {
         background-color: rgb(2, 2, 2);
@@ -106,6 +83,12 @@
     .linkedin {
         background-color: rgb(6, 80, 192);
         width: 15vh;
+        color: rgb(2, 2, 2);
+    }
+
+    a {
+        text-decoration: none;
+        
     }
 }
         
