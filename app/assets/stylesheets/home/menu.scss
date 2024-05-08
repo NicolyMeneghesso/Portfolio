@@ -75,20 +75,29 @@
     margin-top: -36px;
     font-size: 40px;
 
+    .sidebar-vertical-item {
+        width: 15vh;
+        padding: 26px;
+    }
+
     .github {
         background-color: rgb(2, 2, 2);
-        width: 15vh;
     }
 
     .linkedin {
         background-color: rgb(6, 80, 192);
-        width: 15vh;
-        color: rgb(2, 2, 2);
+
+        a {
+            color: rgb(2, 2, 2);
+
+            &:hover {
+                color: aqua;
+            }
+        }
     }
 
     a {
         text-decoration: none;
-        
     }
 }
         
