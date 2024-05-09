@@ -42,11 +42,14 @@
 .sidenav {
     position: fixed;
     overflow-x: hidden;
-    z-index: 1;
+    z-index: 9999;
     top: 70px;
     right: 0;
-    width: 0;
-    padding-top: 36px; 
+    width: 570px;
+    height: 100%;
+    padding-top: 36px;
+    transition: transform 0.5s ease-in-out; /* Suaviza a transição */
+    transform: translateX(100%); /* Inicialmente escondido */
     
     @media screen and (max-height: 450px) {
         .sidenav {padding-top: 15px;}
@@ -82,6 +85,14 @@
 
     .github {
         background-color: rgb(2, 2, 2);
+
+        a {
+            color: rgb(250, 249, 249);
+
+            &:hover {
+                color: rgb(0, 183, 255);
+            }
+        }
     }
 
     .linkedin {
@@ -91,7 +102,7 @@
             color: rgb(2, 2, 2);
 
             &:hover {
-                color: aqua;
+                color: rgb(0, 255, 255);
             }
         }
     }
@@ -106,8 +117,3 @@
     transform: rotate(180deg); 
     text-align: center;
 }
-
-
-
-
-
