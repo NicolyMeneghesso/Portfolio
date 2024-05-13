@@ -1,4 +1,4 @@
-<div class="container bg-black bg-dark bg-gradiente">
+<div class="container">
 
     <%= render partial: "home/cards" %>
     <%= render partial: "home/menu" %>
@@ -8,8 +8,24 @@
                 <h1 id="loading-text" class="loading-text">CODE GIRL</h1>
             </div>
     -->
-
-     <div class="footer">
+    <div class="background"></div>
+       
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <%= image_tag 'img1.jpg', class: 'd-block w-100' %>
+            </div>
+            <div class="carousel-item">
+                <%= image_tag 'img2.jpg', class: 'd-block w-100' %>
+            </div>
+            <div class="carousel-item">
+                <%= image_tag 'img3.png', class: 'd-block w-100' %>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer bg-dark">
         Construído do zero com 🩷 © Copyright 2024, Nicoly Meneghesso. All rights reserved.
     </div> 
 
