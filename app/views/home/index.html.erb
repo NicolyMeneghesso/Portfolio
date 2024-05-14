@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
 
     <%= render partial: "home/cards" %>
     <%= render partial: "home/menu" %>
@@ -10,16 +10,20 @@
     -->
     <div class="background"></div>
        
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <%= image_tag 'img1.jpg', class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag 'img2.jpg', class: 'd-block w-100' %>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag 'img3.png', class: 'd-block w-100' %>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner" style="max-height: 98vh">
+                    <div class="carousel-item active">
+                        <%= image_tag 'img1.jpg', class: 'd-block w-100 h-100' %>
+                    </div>
+                    <div class="carousel-item">
+                        <%= image_tag 'img2.jpg', class: 'd-block w-100 h-100' %>
+                    </div>
+                    <div class="carousel-item">
+                        <%= image_tag 'img3.png', class: 'd-block w-100 h-100' %>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@
 document.addEventListener('DOMContentLoaded', function() { 
     var myCarousel = document.querySelector('#carouselExample');
     var carousel = new bootstrap.Carousel(myCarousel, {
-      interval: 4000, // Intervalo em milissegundos (3 segundos)
+      interval: 4500, // Intervalo em milissegundos (5 segundos)
       ride: 'carousel'
     });
 });

@@ -56,11 +56,8 @@
     height: 100%;
     background-color: rgb(22, 21, 21);
 }
-
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Garante que a imagem cobre o contêiner sem distorcer a proporção */
-}
-
   
+.carousel-inner img {
+    opacity: 0.5;
+    object-fit: cover;
+}
