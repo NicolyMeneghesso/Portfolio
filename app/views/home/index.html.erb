@@ -13,15 +13,21 @@
     <div class="row">
         <div class="col-md-12">
             <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner" style="max-height: 98vh">
+                <div class="carousel-inner" style="max-height: 100vh">
                     <div class="carousel-item active">
-                        <%= image_tag 'img1.jpg', class: 'd-block w-100 h-100' %>
+                        <div
+                            class="d-block w-100 h-100 custom-img"
+                            style="background-image: url('<%= image_url 'img1.jpg' %>');"></div>
                     </div>
                     <div class="carousel-item">
-                        <%= image_tag 'img2.jpg', class: 'd-block w-100 h-100' %>
+                        <div
+                            class="d-block w-100 h-100 custom-img"
+                            style="background-image: url('<%= image_url 'img2.jpg' %>');"></div>
                     </div>
                     <div class="carousel-item">
-                        <%= image_tag 'img3.png', class: 'd-block w-100 h-100' %>
+                        <div
+                            class="d-block w-100 h-100 custom-img"
+                            style="background-image: url('<%= image_url 'img3.png' %>');"></div>
                     </div>
                 </div>
             </div>

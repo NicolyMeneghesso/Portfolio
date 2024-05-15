@@ -57,7 +57,11 @@
     background-color: rgb(22, 21, 21);
 }
   
-.carousel-inner img {
-    opacity: 0.5;
-    object-fit: cover;
+.carousel-inner {
+    .custom-img {
+        background-position: center;
+        background-size: cover;
+        height: 100vh !important;
+        opacity: .5;
+    }
 }
