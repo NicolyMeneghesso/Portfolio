@@ -1,0 +1,22 @@
+.card-home{
+    margin-top: 130px; 
+    position: absolute; 
+    width: -webkit-fill-available; 
+    margin-right: 12px;
+}
+
+.card-main {
+    margin-top: -50px;
+    text-align: center;
+    padding: 0.5px;
+    font-size: 34px;
+    background-color: rgb(241, 241, 246);
+    -webkit-text-stroke: 1px black;
+    color: rgb(255, 37, 204);
+    text-shadow:
+        3px 3px 0 rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0),  
+        1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0),
+        1px 1px 0 rgb(0, 0, 0);
+}

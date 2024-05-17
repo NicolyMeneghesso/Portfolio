@@ -1,6 +1,5 @@
 <div class="container-fluid">
 
-    <%= render partial: "home/cards" %>
     <%= render partial: "home/menu" %>
 
     <!-- Tela de Carregamento 
@@ -8,12 +7,15 @@
                 <h1 id="loading-text" class="loading-text">CODE GIRL</h1>
             </div>
     -->
-    <div class="background"></div>
+    <div class="background bg-black"></div>
        
     <div class="row">
         <div class="col-md-12">
+            <%= render partial: "home/cards" %>
+            
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner" style="max-height: 100vh">
+                
                     <div class="carousel-item active">
                         <div
                             class="d-block w-100 h-100 custom-img"
@@ -35,7 +37,7 @@
     </div>
     
     
-    <div class="footer bg-dark">
+    <div class="footer bg-black">
         Construído do zero com 🩷 © Copyright 2024, Nicoly Meneghesso. All rights reserved.
     </div> 
 
