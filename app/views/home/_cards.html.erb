@@ -1,11 +1,51 @@
 
 <div class="card-home z-1">
+    
     <div class="row justify-content-center align-items-center">
-        <div class="col-md-4">
-            <div class="card-main rounded-5">
+        <div class="col-md-6">
+            <div class="card-main rounded-4">
                 De Engenheira Civil para Desenvolvedora
             </div>
         </div>
     </div>
-</div>
 
+    <div class="row row-cols-md-2 g-3 justify-content-center" style="margin: 5px;">
+        <div class="col-md-3">
+            <div class="card h-100 flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <%= image_tag 'firstproject1.png', class: 'card-img-top flip-card-front', alt: 'First Girl' %>
+                    <div class="card-body">
+                    <h5 class="card-title">A Primeira Programadora da História</h5>
+                    <%= image_tag 'firstproject1.png', class: 'card-img-top flip-card-back onclick="flipCard(this)', alt: 'First Girl' %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-md-2 g-3 justify-content-center" style="margin: 5px;">
+        <div class="col-md-3">
+            <div class="card h-100">
+                <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100">
+                <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
