@@ -9,9 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function flipCard(card) {
     const innerCard = card.querySelector('.flip-card-inner');
-    if (innerCard.style.transform === 'rotateY(180deg)') {
-        innerCard.style.transform = 'rotateY(0deg)';
-    } else {
-        innerCard.style.transform = 'rotateY(180deg)';
-    }
+    innerCard.classList.toggle('is-flipped');
 }
