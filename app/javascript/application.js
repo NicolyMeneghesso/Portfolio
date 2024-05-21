@@ -3,5 +3,6 @@ import "@hotwired/turbo-rails"
 import "controllers"
 
 import "./home/menu.js"
-import "./home/home.js"
 import "./home/cards.js"
+import "./home/about.js"
+

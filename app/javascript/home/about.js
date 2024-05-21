@@ -4,10 +4,10 @@
 //4º Define o intervalo entre as transições dos slides
 //5º Garante que o carrossel comece a rodar automaticamente quando a página for carregada.
 
-document.addEventListener('DOMContentLoaded', function() { 
+/*document.addEventListener('DOMContentLoaded', function() { 
     var myCarousel = document.querySelector('#carouselExample');
     var carousel = new bootstrap.Carousel(myCarousel, {
       interval: 6000, // Intervalo em milissegundos (5 segundos)
       ride: 'carousel'
     });
-});
+});*/

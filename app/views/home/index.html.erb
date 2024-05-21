@@ -13,29 +13,13 @@
         <div class="col-md-12 z-n1">
             <%= render partial: "home/cards" %>
             
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner" style="max-height: 100vh">
-                
-                    <div class="carousel-item active">
-                        <div
-                            class="d-block w-100 h-100 custom-img"
-                            style="background-image: url('<%= image_url 'img1.jpg' %>');"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div
-                            class="d-block w-100 h-100 custom-img"
-                            style="background-image: url('<%= image_url 'img2.jpg' %>');"></div>
-                    </div>
-                    <div class="carousel-item">
-                        <div
-                            class="d-block w-100 h-100 custom-img"
-                            style="background-image: url('<%= image_url 'img3.png' %>');"></div>
+              <div class="img-fluid" style="max-height: 100vh">
+                    <div class="w-100 h-100 custom-img background"
+                        style="background-image: url('<%= image_url 'home.png' %>'); background-size: cover; background-position: center; opacity: .5">
                     </div>
                 </div>
-            </div>
         </div>
     </div>
-    
     
     <div class="footer bg-black">
         Construído do zero com 🩷 © Copyright 2024, Nicoly Meneghesso. All rights reserved.

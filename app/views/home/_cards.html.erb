@@ -9,45 +9,41 @@
         </div>
     </div>
 
-    <div class="row row-cols-md-2 g-3 justify-content-center" style="margin: 5px;">
-        <div class="col-md-3">
-            <div class="card h-100 flip-card" onclick="flipCard(this)">
+    <div class="row row-cols-1 row-cols-md-4 g-4" style="margin: 10px;">
+        <div class="col">
+            <div class="card h-100 flip-card" id="flip-card-1">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
-                        <div class="card-body">
-                            <h5 class="card-title">A Primeira Programadora da História</h5>
-                        </div>
+                        <div class="card-body">O primeiro projeto.</div>
                     </div>
                     <div class="flip-card-back">
-                        <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
+                        <%= image_tag 'firstproject6.png', class: 'card-img-top', alt: 'First Girl' %>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card h-100">
+        <div class="col">
+            <div class="card h-80">
                 <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a short card.</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row row-cols-md-2 g-3 justify-content-center" style="margin: 5px;">
-        <div class="col-md-3">
-            <div class="card h-100">
+        <div class="col">
+            <div class="card h-80">
                 <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with suppnal content.</p>
                 </div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="card h-100">
+        <div class="col">
+            <div class="card h-80">
                 <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">s content is a little bit longer.</p>
                 </div>
             </div>
         </div>
