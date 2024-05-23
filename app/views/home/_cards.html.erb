@@ -1,36 +1,38 @@
 
 <div class="card-home z-1" style="padding-bottom: 50px;">
     
-    <div class="row gx-2">
+    <div class="row p-1">
         <div class="col">
-            <h2 class="title-main">Welcome</h2>
-        </div>
-        <div class="col-md-4 align-self-end">
-            <div class="card-text-main">
-                <p class="text-main text-justify lh-sm fw-medium">Olá, me chamo Nicoly e apresento a vocês o 
-                    meu primeiro blog/portfólio/estudo diário.<br>
-                    Aqui você encontrará informações sobre meus projetos, interesses e muito mais.
-                </p>
-            </div>
+            <h2 class="title">Welcome</h2>
         </div>
     </div>
 
-    <div class="row row-cols-md-4 g-3" style="margin: 30px 20px;">
+    <div class="card-text-main bg-dark bg-gradient" style="--bs-bg-opacity: .8;">
+        <h5 class="title-main">Olá, me chamo Nicoly</h5>
+        <p class="text-main lh-sm">E apresento a vocês o meu primeiro blog, ou talvez um portfólio, ou melhor um estudo diário.<br>
+            <br>Aqui você encontrará informações sobre meus projetos, interesses e muito mais.
+        </p>
+    </div>
+    
+
+    <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3" style="margin: -135px 15px;">
+        <div class="col"></div>
+        <div class="col"></div>
         <div class="col">
-            <div class="card h-100 flip-card" id="flip-card-1">
+            <div class="card bg-dark border-dark h-100 flip-card" id="flip-card-1">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
-                        <div class="card-body">O primeiro projeto.</div>
+                        <div class="card-body text-bg-dark" style="font: 18px 'Trebuchet MS', sans-serif;">O primeiro projeto em Rails</div>
                     </div>
-                    <div class="flip-card-back" style="background-image: url('<%= image_url 'firstproject6.png' %>'); background-size: cover; border-radius: 5px">
+                    <div class="flip-card-back" style="background-image: url('<%= image_url 'firstproject2.png' %>'); background-size: cover; border-radius: 5px">
                     </div>
                 </div>
             </div>
         </div>
         <div class="col">
-            <div class="card h-80">
-                <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
+            <div class="card bg-dark border-dark h-100 flip-card" id="flip-card-1">
+                <%= image_tag 'desafiohoras.png', class: 'card-img-top', alt: 'First Girl' %>
                 <div class="card-body">
                     <p class="card-text">This is a short card.</p>
                 </div>
@@ -38,9 +40,7 @@
         </div>
     </div>
 
-    <div class="row row-cols-md-4 g-3 " style="margin: 20px;">
-        <div class="col"></div>
-        <div class="col"></div> 
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" style="margin: 0 15px;">
         <div class="col">
             <div class="card h-80">
                 <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
