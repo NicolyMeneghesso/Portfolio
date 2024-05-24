@@ -15,21 +15,23 @@
     </div>
     
 
-    <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 g-3" style="margin: -135px 15px;">
+    <div class="row row-cols-1 row-cols-md-4 g-3" style="margin: -135px 15px;">
         <div class="col"></div>
         <div class="col"></div>
         <div class="col">
             <div class="card bg-dark border-dark h-100 flip-card" id="flip-card-1">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front h-80">
-                        <%= image_tag 'firstproject1.png', class: 'card-img-top', alt: 'First Girl' %>
-                        <div class="card-body text-bg-dark" style="font: 18px 'Trebuchet MS', sans-serif;">O primeiro projeto em Rails</div>
+                    <div class="flip-card-front">
+                        <%= image_tag 'firstproject1.png', class: 'custom-img card-img-top', alt: 'First Girl' %>
+                        <div class="text-front text-bg-dark">O primeiro projeto em Rails</div>
                     </div>
-                    <div class="flip-card-back" style="background-image: url('<%= image_url 'firstproject2.png' %>'); background-size: cover; border-radius: 5px">
+                    <div class="flip-card-back" 
+                        style="background-image: url('<%= image_url 'firstproject2.png' %>'); background-size: cover; border-radius: 5px">
                     </div>
                 </div>
             </div>
         </div>
+        
         <div class="col">
             <div class="card bg-dark border-dark h-100 flip-card" id="flip-card-1">
                 <%= image_tag 'desafiohoras.png', class: 'card-img-top', alt: 'First Girl' %>
@@ -40,7 +42,7 @@
         </div>
     </div>
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" style="margin: 0 15px;">
+    <div class="row row-cols-1 row-cols-md-4 g-3" style="margin: 0 15px;">
         <div class="col">
             <div class="card h-80">
                 <%= image_tag 'desafioidade.png', class: 'card-img-top', alt: 'First Girl' %>

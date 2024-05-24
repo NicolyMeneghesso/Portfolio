@@ -42,6 +42,12 @@
     }
 }
 
+.custom-img {
+    width: 100%; /* Ajusta a largura para preencher o contêiner pai */
+    height: 57vh; /* Define uma altura fixa */
+    object-fit: cover; /* Mantém a proporção e cobre a área */
+}
+
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -72,5 +78,10 @@
   
 .flip-card-back {
     transform: rotateY(180deg);
+}
+
+.text-front {
+    font: 20px 'Trebuchet MS', sans-serif;
+    padding: 5px;
 }
   
