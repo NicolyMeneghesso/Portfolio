@@ -1,14 +1,12 @@
 .card-home{
     margin-top: 130px; 
-    position: absolute; 
+    position: absolute;
     width: -webkit-fill-available; 
     margin-right: 12px;
 }
 
 .title {
     margin-top: -50px;
-    padding-left: 40px;
-    text-align: left;
     font-size: 90px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(255, 37, 204);
@@ -23,7 +21,6 @@
 
 .card-text-main {
     position: relative;
-    margin-left: 25px;
     width: 65vh;
     height: auto;
     background: rgba(255, 255, 255, .2);
@@ -31,7 +28,7 @@
     padding: 15px;
     font-family: cursive; 
     color: rgb(247, 85, 209);
-
+   
     .title-main {
         font-size: 24px;
         text-align: center;
@@ -51,7 +48,7 @@
 .custom-img {
     width: 100%;
     height: 280px; /* Define uma altura fixa */
-    object-fit: contain; /* Mantém a proporção e cobre a área */
+    object-fit: cover; /* Mantém a proporção e cobre a área */
 }
 
 .custom-bg-img {
