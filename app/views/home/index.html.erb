@@ -2,29 +2,33 @@
 
     <%= render partial: "home/menu" %>
 
+    <div style="height: 73px;"></div>
+
     <!-- Tela de Carregamento 
             <div id="loading-screen" class="loading-screen">
                 <h1 id="loading-text" class="loading-text">CODE GIRL</h1>
             </div>
     -->
-    <div class="background bg-black z-n1"></div>
+    <%# <div class="background bg-black z-1"></div> %>
        
     <div class="row">
-        <div class="col-md-12 z-n1">
+        <div class="col-md-12 z-2">
             <%= render partial: "home/cards" %>
-            
-              <div class="img-fluid" style="max-height: 100vh">
-                    <div class="w-100 h-100 custom-img background"
-                        style="background-image: url('<%= image_url 'home.png' %>'); background-size: cover; background-position: center; opacity: .5">
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div style="height: 650px; background-image: url('<%= image_url 'home.png' %>'); background-size: cover; background-position: center; opacity: .5"></div>
+
+    <div class="row" id="about-me">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">asdasdd</div>
+            </div>
         </div>
     </div>
     
+    <div style="height: 50px;"></div>
     <div class="footer bg-black">
-        Construído do zero com 🩷 © Copyright 2024, Nicoly Meneghesso. All rights reserved.
+        Construído do zero com &#x2764; © Copyright 2024, Nicoly Meneghesso. All rights reserved.
     </div> 
-
-    <div class="card border-dark"></div>
 
 </div>
