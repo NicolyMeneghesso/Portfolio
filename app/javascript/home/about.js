@@ -11,3 +11,17 @@ document.addEventListener('DOMContentLoaded', function() {
       ride: 'carousel'
     });
 }); 
+
+
+
+
+// Variavel de decimal
+// Timer para aumentar a variavel decimal em 1
+// Função para converter o decimal em Binario
+
+/*console.log("O valor é: " + ConvertToBinario())
+
+function ConvertToBinario() {
+  let result = 0;
+  return result;
+}*/
