@@ -1,3 +1,5 @@
+// Capturar evento de submit do formulário
+
 document.addEventListener('DOMContentLoaded', function () {
     let peso = document.getElementById('peso')
     let altura = document.getElementById('altura')

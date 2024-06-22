@@ -1,28 +1,42 @@
-<div class="container-fluid">
+<div class="container-fluid p-0">
 
     <%= render partial: "home/menu" %>
-
-    <div style="height: 73px;"></div>
 
     <!-- Tela de Carregamento 
             <div id="loading-screen" class="loading-screen">
                 <h1 id="loading-text" class="loading-text">CODE GIRL</h1>
             </div>
     -->
-    <%# <div class="background bg-black z-1"></div> %>
-       
-    <div class="row">
-        <div class="col-md-12 z-2">
-            <%= render partial: "home/cards" %>
+
+    <div class="row g-0">
+        <div class="col col-sm-6 col-md-4">
+            <div class="card-main-1 bg-dark"></div>
+            <div class="card-body">
+                <div class="sub-div">
+                    <img src="<%= image_url 'programacao.png' %>" alt="Programação" class="image1 z-1">
+                    <img src="<%= image_url 'coffe.png' %>" alt="coffe" class="image2 z-1">
+                </div>  
+                <div class="sub-div2">
+                    <img src="<%= image_url 'eevee.png' %>" alt="coffe" class="image3 z-1">
+                    <img src="<%= image_url 'books.png' %>" alt="coffe" class="image4 z-1">
+                </div>
+            </div>
+        </div>
+        <div class="col col-6 col-md-8 justify-content-center align-items-center">
+            <div class="card-main-2">
+                <div class="card-body-main">
+                    <p class="card-title-main fw-semibold text-center">👋 Hi, I'm Nicoly</p>
+                    <p class="card-text-main">E apresento a vocês o meu primeiro blog, ou talvez um portfólio, ou melhor um estudo diário.</p>
+                    <!-- Aqui você encontrará informações sobre meus projetos, interesses e muito mais -->
+                </div>
+            </div>
         </div>
     </div>
-    <div style="height: 650px; background-image: url('<%= image_url 'home.png' %>'); background-size: cover; background-position: center; opacity: .5">
-    </div>
 
+    
     <%= render partial: "home/about" %>
     
-    <div class="footer bg-black">
-        Construído do zero com &#x2764; © Copyright 2024, Nicoly Meneghesso. All rights reserved.
+    <div class="footer py-2">
+      Construído do zero com &#x2764; © Copyright 2024, Nicoly Meneghesso. All rights reserved.
     </div> 
-
 </div>
