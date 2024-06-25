@@ -5,8 +5,8 @@
 //5º Garante que o carrossel comece a rodar automaticamente quando a página for carregada.
 
 document.addEventListener('DOMContentLoaded', function() { 
-    var myCarousel = document.querySelector('#carouselExample');
-    var carousel = new bootstrap.Carousel(myCarousel, {
+    let myCarousel = document.querySelector('#carouselExample');
+    let carousel = new bootstrap.Carousel(myCarousel, {
       interval: 8000, // Intervalo em milissegundos (5 segundos)
       ride: 'carousel'
     });

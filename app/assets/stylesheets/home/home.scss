@@ -1,3 +1,14 @@
+// configuraçoes da pag
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    scrollbar-width: auto;
+    scrollbar-color: var(--color-mint) var(--color-sherbet-fade);
+}
+
 /*Tela de Carregamento*/
 
 .loading-screen {
@@ -26,14 +37,6 @@
     -webkit-text-stroke: 3.5px rgba(70, 186, 244, 0.871);
 }
 
-// configuraçoes da pag
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-
-* {
-  box-sizing: border-box;
-  outline: 0;
-}
 
 @keyframes typing {
     from { width: 0; }
@@ -44,6 +47,8 @@
     0% { color: transparent; }
     100% { color: rgba(217, 8, 168, 0.75); }
 }
+
+//conf do footer
 
 .footer {
     position: fixed;
@@ -58,106 +63,7 @@
 }
 
 //Cards de fundo
-.card-main-1 {
-    height: 100vh;
-}
-
-.card-main-2 {
+.card-main {
     background-color: rgb(134, 5, 102);
     height: 100vh;
 }
-
-//Card do texto
-.card-body-main {
-    background-color: transparent;
-    margin: 0 auto;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    height: 100%;
-
-}
-
-.card-title-main {
-    width: 30vh;
-    color: white;
-    transform: rotate(-5deg);
-    transform-origin: bottom left;
-    font-family: 'Dancing Script', cursive;
-    font-size: 30px;
-}
-
-.card-text-main {
-    color: white;
-    width: 65vh;
-    font-size: 47px;
-    font-family: 'Wellfleet', sans-serif;
-}
-
-//div que vazia que será a "mesa"
-.sub-div {
-    position: absolute;
-    top: 62%; 
-    left: 40%;
-    width: 59vh;
-    height: 13px;
-    transform: translate(-100%, 50%); /* Ajustado para ficar um pouco abaixo do meio */
-    background-color: var(--bs-gray-700); /* Usando a variável do Bootstrap */
-    border: 2px solid var(--bs-gray-800); /* Borda de um tom mais escuro */
-    border-radius: 5px;
-}
-
-.sub-div2 {
-    position: absolute;
-    top: 40%; 
-    left: 18%;
-    width: 20vh;
-    height: 10px;
-    transform: translate(-100%, 50%); /* Ajustado para ficar um pouco abaixo do meio */
-    background-color: var(--bs-gray-700); /* Usando a variável do Bootstrap */
-    border: 2px solid var(--bs-gray-800); /* Borda de um tom mais escuro */
-    border-radius: 5px;
-}
-
-.image1 {
-    position: absolute;
-    bottom: -46px;    
-    left: 25%;
-    width: 80%;
-    height: auto; /* ou qualquer altura que você precise */
-    object-fit: cover; /* para ajustar a imagem conforme necessário */
-    z-index: 1;
-    opacity: .8;
-}
-
-.image2 {
-    position: absolute;
-    bottom: -5px;    
-    left: 4%;
-    width: 28%;
-    height: auto; /* ou qualquer altura que você precise */
-    object-fit: cover; /* para ajustar a imagem conforme necessário */
-    z-index: 1;
-}
-
-.image3 {
-    position: absolute;
-    bottom: 5px;    
-    left: -15px;
-    width: 40%;
-    height: auto; /* ou qualquer altura que você precise */
-    object-fit: cover; /* para ajustar a imagem conforme necessário */
-    z-index: 1;
-}
-
-.image4 {
-    position: absolute;
-    bottom: -22px;    
-    left: -16px;
-    width: 30vh;
-    height: auto; /* ou qualquer altura que você precise */
-    object-fit: cover; /* para ajustar a imagem conforme necessário */
-    z-index: 1;
-}
-
