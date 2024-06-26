@@ -25,17 +25,17 @@
 }
 
 .sub-div {
-    bottom: 250px;
+    bottom: 140px;
     left: 40%;
     width: 59vh;    
     height: 13px;
 }
 
 .sub-div2 {
-    bottom: 400px;
-    left: 12%;
-    width: 20vh;
-    height: 11px;
+    bottom: 340px;
+    left: 19%;
+    width: 21vh;
+    height: 12px;
 }
 
 //imagens principais
@@ -51,34 +51,36 @@
 // Estilos específicos para cada imagem
 
 .img-main-0  {
-    bottom: 460px;
-    left: 12%;
-    width: 35vh;
+    top: -690px;
+    left: 65%;
+    width: 32vh;
+    cursor: pointer;
+    position: relative;
 }
 
 .img-main-1  {
-    top: 299px;
-    left: 20%;
+    top: -278px;
+    left: 112px;
     width: 46vh;
     opacity: .8;
 }
 
 .img-main-2 {
-    top: 460px;
-    left: 13%;
-    width: 18vh;
+    top: -105px;
+    left: 10px;
+    width: 16vh;
 }
 
 .img-main-3 {
-    top: 294px;
-    left: 7.5%;
-    width: 9vh;
+    top: -55px;
+    left: -13px;
+    width: 8vh;
 }
 
 .img-main-4 {
-    top: 252px;
-    left: 8%;
-    width: 30vh;
+    top: -112px;
+    left: -11px;
+    width: 32vh;
 }
 
 @media (max-width: 800px) {
