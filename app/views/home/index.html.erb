@@ -8,10 +8,10 @@
             </div>
     -->
 
-    <div class="row g-0 bg-dark positon-relative">
+    <div class="row g-0 positon-relative row-body" id="row-body">
         <div class="col-md-4"></div>
         <div class="col-md-8">
-            <div class="card-main d-flex justify-content-center align-items-center">
+            <div class="card-main d-flex justify-content-center align-items-center" id="card-main">
                 <div class="card-body-main text-center">
                     <p class="card-title-main fw-semibold" >👋 Hi, I'm Nicoly</p>
                     <p class="card-text-main">E apresento a vocês o meu primeiro blog, ou talvez um portfólio, ou melhor um estudo diário.</p>
@@ -20,15 +20,20 @@
         </div>
     </div>
 
-    <div class="col-md-4 h-100" id="container">
-        <img src="<%= image_url 'luminaria.png' %>" alt="luminaria" class="img-main img-main-0" id="img-main-0">
-        <div class="sub sub-div">
-            <img src="<%= image_url 'monitor.png' %>" alt="monitor" class="img-main img-main-1">
-            <img src="<%= image_url 'coffe.png' %>" alt="coffe" class="img-main img-main-2">
-        </div>
-        <div class="sub sub-div2">
-            <img src="<%= image_url 'eevee.png' %>" alt="eevee" class="img-main img-main-3">
-            <img src="<%= image_url 'books.png' %>" alt="books" class="img-main img-main-4">
+    <div class="col-md-4 h-100 positon-relative">
+        <div class="image-container d-flex flex-wrap">
+            <div class="sub sub-div0">
+            <img src="<%= image_url 'luminaria.png' %>" alt="luminaria" class="img-main img-main-0" id="lamps">
+            <div class="light-beam" id="light-beam"></div> <!-- Adicione este elemento para o feixe de luz -->
+            </div>
+            <div class="sub sub-div1">
+                <img src="<%= image_url 'monitor.png' %>" alt="monitor" class="img-main img-main-1">
+                <img src="<%= image_url 'elfo.png' %>" alt="elfo" class="img-main img-main-2">
+
+            </div>
+            <div class="sub sub-div2">
+                <img src="<%= image_url 'books.png' %>" alt="books" class="img-main img-main-3">
+            </div>
         </div>
     </div>
         
