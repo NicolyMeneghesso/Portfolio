@@ -79,33 +79,3 @@
 .card-main-moon {
     background-color: rgb(255, 0, 183);
 }
-
-@keyframes flicker {
-    0% { opacity: 0; }
-    50% { opacity: 0.5; }
-    100% { opacity: 0.9; }
-}
-
-.light-beam {
-    position: absolute;
-    top: 125px; 
-    left: 248px; 
-    transform: translateX(-50%);
-    width: 800px; 
-    height: 379px;
-    background: linear-gradient(to bottom, rgba(255, 244, 197, 0.632) 0%, rgba(255, 244, 0, 0.1) 100%);
-    opacity: 0.9;
-    animation: flicker 0.8s 0.2s forwards;
-    z-index: 0;
-    clip-path: polygon(50% 0%, 70% 100%, 30% 100%);
-    transition: opacity 0.8s ease; /* Adiciona transição para opacidade */
-}
-
-.light-beam.transparent {
-    opacity: 0;
-}
-
-
-#lamps:active ~ .light-beam {
-    opacity: 0; /* Adicionar transição de opacidade */
-}
