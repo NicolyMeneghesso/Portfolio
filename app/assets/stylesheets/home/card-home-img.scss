@@ -91,42 +91,172 @@
         border-bottom: 13px solid var(--bs-gray-700);
         z-index: 6;
         height: 140px;
-        width: 90%;
-        left: 30%;
+        width: 96%;
+        left: 26%;
         top: 420px;
 
         .shelf-bottom-elfo {
             flex: 0 0 25%;
-            margin-top: 358px;
+            margin-top: 340px;
         }
 
         .shelf-bottom-monitor {
             flex: 0 0 80%;
             position: absolute;
             bottom: 0;
-            left: 45%;
+            left: 41%;
             transform: translateX(0%);
             height: 50%;
             min-width: 60%;
 
             .monitor-bg {
-                height: 100%;
-                width: 120%;
+                height: 102%;
+                width: 116%;
                 padding-left: 3.5px;
                 padding-right: 5px;
 
                 .screen {
-                    text-align: left;
-                    background-color: black;
-                    color: white;
-                    font-family: "PT Mono";
+                    background-color: rgb(0, 0, 0);
                     height: 75%;
-                    padding: 6px;
-                    border: 6px solid #404040;
+                    padding: 3px;
+                    border: 6px solid rgb(64, 64, 64);
                     border-radius: 5px;
                     border-bottom-left-radius: 0;
                     border-bottom-right-radius: 0;
                     overflow: auto;
+                    
+                    .vscode {
+                        background-color: rgb(33, 37, 41);
+                        border: 1.6px solid rgb(64, 64, 64);
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        position: relative;
+                    
+                        .menu-top {
+                            background-color: rgb(57, 57, 59);
+                            height: 10%;
+                            width: 92%;
+                            position: absolute;
+                            top: 0;
+                            left: 8%;
+                            display: flex;
+                            align-items: center;
+                            margin: 0;
+                            list-style: none;
+                        }
+            
+                        .menu-top li {
+                            display: flex;
+                            align-items: center;
+                            padding: 0 6px;
+                            position: relative;
+                        }
+            
+                        .menu-top li::before {
+                            content: '';
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                        }
+            
+                        .menu-top li.html::before {
+                            background-color: red;
+                        }
+            
+                        .menu-top li.css::before {
+                            background-color: pink;
+                        }
+            
+                        .menu-top li.js::before {
+                            background-color: yellow;
+                        }
+            
+                        .menu-top li.active {
+                            background-color: rgb(33, 37, 41);
+                            border-bottom: none;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            z-index: 1;
+                        }
+                                        
+                        .menu-left {
+                            background-color: rgb(65, 69, 74);
+                            height: 100%;
+                            width: 8%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 2px 0;
+                        }
+            
+                        .menu-left i {
+                            color: rgb(124, 121, 121);
+                            font-size: 12px;
+                            margin: 14px 0;
+                        }
+                    }
+                                   
+                    .screen-title {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        color: white;
+                        font: 500 30px 'Wellfleet', cursive;
+                        letter-spacing: 1px;
+                        height: 100%;
+                        margin: 5px;
+                        animation: zoomIn 2s ease-in-out;
+                    }
+
+                    @keyframes zoomIn {
+                        0% {
+                            opacity: 0;
+                            transform: scale(0.5);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
+
+                    .keyword { 
+                        color: rgb(133, 204, 234); 
+                        font-size: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+
+                    .string { 
+                        color: rgb(177, 90, 49); 
+                        font-size: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    .method { 
+                        color: rgb(206, 205, 133); 
+                        font-size: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    .function { 
+                        color: rgb(70, 133, 181); 
+                        font-size: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    .variable { 
+                        color: rgb(39, 83, 197); 
+                        font-size: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    .symbol {
+                        color: rgb(141, 87, 192); 
+                        font-size: 10px;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
                 }
 
                 .base {
@@ -146,6 +276,7 @@
         }
     }
 }
+
 
 // Responsividade
 
