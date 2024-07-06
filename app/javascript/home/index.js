@@ -13,4 +13,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
         lightBeam.classList.toggle('transparent')
     })
+
+    const el = document.getElementById('monitorScreen')
+    const interval = 300
+    const text = 'function helloWorld() {' +
+                    'return `Hello, World!`;' +
+                    '}' +
+                    'console.log(helloWorld());' +
+                'alert("Hello, World!");';
+
+    function showText(el, text, interval) {
+        const char = text.split("").reverse()
+        const typer = setInterval(() => {
+            if(!char.lenght) {
+                return clearInterval(typer)
+            }
+        const next = char.pop()
+        el.innerHTML += next
+        }, interval)
+    }
+    showText(el, text, interval)
 })
