@@ -1,30 +1,9 @@
-.carousel-inner {
-    .custom-img {
-        background-position: center;
-        background-size: cover;
-        height: 100vh !important;
-        opacity: .4;
-    }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.row-about {
+    background-color: rgb(113, 4, 115);
+    margin: 0;
 }
 
-.card-gif {
-    height: 100px;
-    width: 100%;
-    background-size: contain;
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
 
-.title {
-    margin-top: -65px;
-    font-size: 80px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(255, 37, 204);
-    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
-    text-shadow:
-        2px 2px 3px rgba(97, 227, 247, 0.5),    
-        -2px -2px 3px rgba(137, 234, 249, 0.985),  
-        2px -2px 3px rgba(97, 227, 247, 0.5),    
-        -2px 2px 3px rgba(137, 234, 249, 0.985),
-        2px 2px 3px rgba(97, 227, 247, 0.5);
-}
+

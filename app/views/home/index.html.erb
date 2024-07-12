@@ -1,4 +1,4 @@
-<div class="container-fluid p-0">
+<div class="container-fluid p-0" style="max-height: 100vh;">
 
     <%= render partial: "home/menu" %>
 
@@ -46,30 +46,33 @@
                                         <ul class="vscode-explorer">
                                             <li>
                                                 <i class="fas fa-angle-down"></i>
-                                                <span class="name-pasta" style="margin-top: 12px; margin-left: 4px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 24px; margin-left: 6px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 34px; margin-left: 12px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 44px; margin-left: 12px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 54px; margin-left: 12px;"></span>
+                                                <span class="name-pasta"></span>
+                                                <span class="name-sub-pasta"></span>
+                                                <span class="name-sub-pasta"></span>
+                                                <span class="name-sub-pasta" style="margin-top: 14px;"></span>
+                                                <span class="name-sub-pasta" style="margin-top: 30px;"></span>
 
                                             </li>  
 
                                             <li>
                                                 <i class="fas fa-angle-down"></i>
-                                                <span class="name-pasta" style="margin-top: 12px; margin-left: 4px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 24px; margin-left: 6px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 34px; margin-left: 12px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 44px; margin-left: 12px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 54px; margin-left: 12px;"></span>
+                                                <span class="name-pasta"></span>
+                                                <span class="name-sub-pasta"></span>
+                                                <span class="name-sub-pasta"></span>
+                                                <span class="name-sub-pasta" style="margin-top: 14px;"></span>
+                                                <span class="name-sub-pasta" style="margin-top: 30px;"></span>
+
                                             </li>    
 
                                             <li>
                                                 <i class="fas fa-angle-down"></i>
-                                                <span class="name-pasta" style="margin-top: 12px; margin-left: 4px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 24px; margin-left: 6px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 34px; margin-left: 12px;"></span>
-                                                <span class="name-sub-pasta" style="margin-top: 44px; margin-left: 12px;"></span>
-                                            </li>                                            
+                                                <span class="name-pasta"></span>
+                                                <span class="name-sub-pasta"></span>
+                                                <span class="name-sub-pasta"></span>
+                                                <span class="name-sub-pasta" style="margin-top: 14px;"></span>
+                                                <span class="name-sub-pasta" style="margin-top: 30px;"></span>
+
+                                            </li>                                              
                                         </ul>
 
                                         <ul class="menu-top">
@@ -78,16 +81,31 @@
                                             <li class="js active"></li>
                                         </ul>
 
-                                        <div class="vscode-content">
-                                            <div class="vscode-number">
-                                                <span id="lineNumbers">10<br>11<br>12<br>13<br>14<br>15<br>16<br>17</span>
+                                        <div class="vscode-content" id="vscodeContent">
+                                            <div class="line">
+                                                <div class="vscode-number">10</div>
+                                                <div class="vscode-text" id="line-0"></div>
                                             </div>
-                                            <div class="vscode-text">
-                                                <span id="codeLines"></span>
+                                            <div class="line">
+                                                <div class="vscode-number">11</div>
+                                                <div class="vscode-text" id="line-1"></div>
                                             </div>
+                                            <div class="line">
+                                                <div class="vscode-number">12</div>
+                                                <div class="vscode-text" id="line-2"></div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="vscode-number">13</div>
+                                                <div class="vscode-text" id="line-3"></div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="vscode-number">14</div>
+                                                <div class="vscode-text" id="line-4"></div>
+                                            </div>
+                                            <div class="line">
+                                                <div class="vscode-number">15</div>
+                                            </div>  
                                         </div>
-                                        
-                                        <!-- <p class="screen-title hidden">Hello World!</p> -->
 
                                     </div>
                                 </div>
@@ -113,6 +131,6 @@
     <%= render partial: "home/about" %>
     
     <div class="footer py-2">
-      Construído do zero com &#x2764; © Copyright 2024, Nicoly Meneghesso. All rights reserved.
+      Construído do zero com <span class="heart"></span> © Copyright 2024, Nicoly Meneghesso. All rights reserved.
     </div> 
 </div>

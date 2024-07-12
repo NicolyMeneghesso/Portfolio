@@ -58,11 +58,56 @@
     color: rgb(246, 9, 202);
     text-align: center;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heart {
+        display: inline-block;
+        position: relative;
+        margin: 0 8px;
+        height: 9px;
+        width: 9px;
+        background-color: rgb(246, 9, 202);
+        transform: rotate(45deg);
+        margin-bottom: 3px;
+        animation: heartbeat 1s infinite; /* Aplica a animação */
+
+
+         &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            background-color: rgb(246, 9, 202);
+            border-radius: 50%;
+        }
+
+        &::before {
+            top: -7px;
+            left: 0;
+        }
+
+        &::after {
+            top: 0;
+            left: -7px;
+        }
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1) rotate(45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(45deg);
+    }
 }
 
 //Cards de fundo
 .row-body {
-    background-color: #212529; // Usando a variável do Bootstrap 
+    background-color: #212529; 
     transition: background 0.2s linear;
 }
 
@@ -79,3 +124,4 @@
 .card-main-moon {
     background-color: rgb(241, 81, 196);
 }
+
