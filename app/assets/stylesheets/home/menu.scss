@@ -1,3 +1,7 @@
+.navbar-dark {
+    background-color: rgb(33, 37, 41);
+}
+
 .menu-toggle {
     /* Container para os itens do menu */   
     display: flex;
@@ -48,12 +52,11 @@
 }
 
 .text {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Indie Flower';
     color: rgb(255, 0, 183);
-    text-shadow: 1px 3px 2px rgb(22, 216, 242);
+    text-shadow: 1px 1px 2px rgb(22, 216, 242);
     font-size: 38px;
     cursor: default;
-    text-align: center;
 }
 
 /*TELA DO MENU*/
@@ -98,7 +101,7 @@
     font-size: 40px;
 
     .sidebar-vertical-item {
-        width: 15vh;
+        width: 16vh;
         padding: 26px;
     }
 

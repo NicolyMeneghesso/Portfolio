@@ -1,9 +1,106 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-.row-about {
-    background-color: rgb(113, 4, 115);
-    margin: 0;
+.col-body {
+    background-color: rgb(77, 68, 133);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-about {
+        background-color: rgb(33, 37, 41);
+        width: 60%;
+        height: 60%;
+        border-radius: 10px;
+        box-shadow: 10px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        
+        .card-about-text {
+            width: 80%;
+            margin: 15px;
+            padding: 10px;
+
+            .text-title {
+                color: rgb(240, 255, 255);
+                font: 20px 'Montserrat';
+                margin-top: 15px;
+            }
+
+            .text-about {
+                height: 90%;
+                color: rgb(240, 255, 255);
+                font: 18px 'Wellfleet';
+                margin-top: 10px;
+            }
+        }
+    }
+    .card-about-img {
+        position: absolute; 
+        top: 80px; 
+        right: 150px; 
+        width: auto;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+        .img-girl {
+            max-width: 300px; 
+            height: auto;
+            border-radius: 20%;
+            border: 5px solid rgb(33, 37, 41); 
+        }
+    }
 }
 
+//Media queries para responsividade 
+
+@media only screen and (min-width: 800px) and (max-width: 1400px){
+    .text-title  {
+        font-size: 2.9em;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .text-title {
+        font-size: 2.5em;
+        width: auto;
+    }
+
+    .card-about {
+        background-color: var(--bs-dark) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vh;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .text-title  {
+        font-size: 1.9em;
+        width: auto;
+    }
+
+    .card-about  {
+        background-color: var(--bs-dark) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .img-girl {
+        display: none;
+    }
+}   
 
 

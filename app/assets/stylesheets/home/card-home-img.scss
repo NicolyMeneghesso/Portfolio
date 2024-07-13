@@ -108,6 +108,7 @@
             margin-top: 340px;
         }
 
+        //Ajustes Monitor
         .shelf-bottom-monitor {
             flex: 0 0 80%;
             position: absolute;
@@ -122,6 +123,7 @@
                 width: 116%;
                 padding: 0 5px 0 3.5px;
 
+                //Ajustes tela
                 .screen {
                     background-color: rgb(0, 0, 0);
                     height: 75%;
@@ -268,30 +270,6 @@
                             white-space: pre-wrap; // Mantém espaços e quebras de linha
                             text-align: left;
                             padding-left: 5px;
-                        }
-                    }
-                    
-                    .screen-title {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        color: rgb(255, 255, 255);
-                        font: 500 30px 'Wellfleet', cursive;
-                        letter-spacing: 1px;
-                        height: 100%;
-                        margin: 5px;
-                        animation: zoomIn 2s ease-in-out;
-                    }
-                    
-                    @keyframes zoomIn {
-                        0% {
-                            opacity: 0;
-                            transform: scale(0.5);
-                        }
-                        100% {
-                            opacity: 1;
-                            transform: scale(1);
                         }
                     }
                 }
