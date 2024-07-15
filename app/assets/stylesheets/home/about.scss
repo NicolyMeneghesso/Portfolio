@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-.col-body {
+.col-about {
     background-color: rgb(77, 68, 133);
     height: 100vh;
     display: flex;
@@ -10,13 +10,11 @@
     .card-about {
         background-color: rgb(33, 37, 41);
         width: 60%;
-        height: 60%;
         border-radius: 10px;
         box-shadow: 10px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
         position: relative;
         
         .card-about-text {
@@ -26,22 +24,24 @@
 
             .text-title {
                 color: rgb(240, 255, 255);
-                font: 20px 'Montserrat';
+                font: 25px 'Montserrat';
                 margin-top: 15px;
             }
 
             .text-about {
-                height: 90%;
                 color: rgb(240, 255, 255);
-                font: 18px 'Wellfleet';
+                font: 18px 'Montserrat';
                 margin-top: 10px;
+                padding: 5px;
+                overflow-wrap: break-word; 
             }
         }
     }
+
     .card-about-img {
         position: absolute; 
-        top: 80px; 
-        right: 150px; 
+        top: 85px; 
+        right: 165px; 
         width: auto;
         margin: 0;
         display: flex;
@@ -53,6 +53,7 @@
             height: auto;
             border-radius: 20%;
             border: 5px solid rgb(33, 37, 41); 
+            box-shadow: 8px 8px 3px rgba(0, 0, 0, 0.1); 
         }
     }
 }

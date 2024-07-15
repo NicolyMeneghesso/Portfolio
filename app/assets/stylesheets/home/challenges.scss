@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.col-challenges {
+    background-color: rgb(33, 37, 41);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img-challenges {
+        width: 40%;
+        padding: 10px;
+        
+        .col-3 {
+            padding: 10px;
+
+            img {
+                width: 25%;
+                height: auto;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    .img-challenges .col-3 img {
+        width: 65%;
+    }
+}
+
+@media (max-width: 992px) {
+    .img-challenges .col-3 img {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-challenges .col-3 img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .img-challenges .col-3 img {
+        width: 35%;
+    }
+}
