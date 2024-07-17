@@ -11,7 +11,7 @@
 }
 
 .card-title-main {
-    width: 36vh;
+    width: 25%;
     color: rgb(255, 255, 255);
     transform: rotate(-5deg);
     transform-origin: bottom left;
@@ -26,8 +26,9 @@
     font-weight: 600;
     letter-spacing: .6px;
     font-family: 'Wellfleet', sans-serif;
+    text-align: left;
+    margin: 0 0 0 30px;
 } 
-
 
 //Media queries para responsividade 
 

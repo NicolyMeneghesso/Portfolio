@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.challenges {
+    background-color: rgb(15, 23, 42);
+    height: 150vh;
+    width: 100%;
+    //margin: 25px;
+    align-items: center;
+
+    .img-challenges {
+        //margin: 10%;
+        width: 80%;
+        height: auto;
+    }
+
+    .text-challenges {
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        font: 20px "Edu AU VIC WA NT Hand", cursive;
+        color: rgb(228, 228, 231);
+    }
+}

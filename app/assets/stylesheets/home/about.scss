@@ -9,9 +9,9 @@
 
     .card-about {
         background-color: rgb(33, 37, 41);
+        box-shadow: 10px 8px rgba(0, 0, 0, 0.1);
         width: 60%;
         border-radius: 10px;
-        box-shadow: 10px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         display: flex;
         flex-direction: column;
@@ -24,7 +24,7 @@
             overflow-y: auto;
             max-height: 70vh;
 
-            .text-title {
+            .text-title-about {
                 color: rgb(240, 255, 255);
                 font: 25px 'Montserrat';
                 margin-top: 15px;
@@ -65,7 +65,7 @@
 // Media queries para responsividade 
 
 @media only screen and (min-width: 900px) {
-    .text-title {
+    .text-title-about {
         width: 100%;
         text-align: center;
     }
@@ -80,7 +80,7 @@
         width: 90% !important;
     }
 
-    .text-title {
+    .text-title-about {
         font-size: 1.2em;
         width: 100%;
         text-align: center;
@@ -98,14 +98,16 @@
         align-items: center;
     }
 
-    .text-title {
+    .text-title-about {
         font-size: 0.9em;
         width: 100%;
         text-align: center;
     }
 
     .text-about {
-        display: none;
+        //display: none;
+        font-size: 0.09em;
+        text-align: left !important;
     }
 }
 
