@@ -28,6 +28,7 @@
     font-family: 'Wellfleet', sans-serif;
 } 
 
+
 //Media queries para responsividade 
 
 @media only screen and (min-width: 800px) and (max-width: 1400px){
@@ -41,47 +42,52 @@
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 800px){
-    .row {
-        display: none;
-    }
-
-    .card-title-main {
-        font-size: 1.9em;
-    }
-
-    .card-text-main {
-        font-size: 2.5em;
-        width: auto;
-    }
-
-    .card-main {
+@media only screen and (min-width: 650px) and (max-width: 800px){
+    .card-main, .col-md-8 {
         background-color: var(--bs-dark) !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex; 
+        justify-content: center !important;
+        align-items: center !important;
         height: 100vh;
         width: 100vh;
         margin: 0;
-
     }
-}
 
-@media only screen and (min-width: 300px) and (max-width: 600px){
+    .row-body {
+        display: flex; 
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .col-md-4 {
+        display: none;
+    }
+
     .card-title-main {
         font-size: 1.8em;
     }
 
     .card-text-main {
-        font-size: 1.9em;
+        font-size: 2.5em;
         width: auto;
-    }
+    }    
+}
 
+@media only screen and (min-width: 300px) and (max-width: 650px){
     .card-main {
         background-color: var(--bs-dark) !important;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+    }
+
+    .card-title-main {
+        font-size: 1.6em;
+    }
+
+    .card-text-main {
+        font-size: 1.7em;
+        width: auto;
     }
 }

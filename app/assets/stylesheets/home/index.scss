@@ -125,3 +125,14 @@
     background-color: rgb(241, 81, 196);
 }
 
+@media only screen and (min-width: 450px) and (max-width: 550px){
+    .footer {
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 450px){
+    .footer {
+        font-size: 0.5em;
+    }
+}

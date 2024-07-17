@@ -51,7 +51,7 @@
     width: 50px;
 }
 
-.text {
+.nav-text {
     font-family: 'Indie Flower';
     color: rgb(255, 0, 183);
     text-shadow: 1px 1px 2px rgb(22, 216, 242);
@@ -140,3 +140,8 @@
     text-align: center;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .menu-toggle {
+        display: none;
+    }
+}

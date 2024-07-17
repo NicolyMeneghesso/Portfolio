@@ -21,11 +21,14 @@
             width: 80%;
             margin: 15px;
             padding: 10px;
+            overflow-y: auto;
+            max-height: 70vh;
 
             .text-title {
                 color: rgb(240, 255, 255);
                 font: 25px 'Montserrat';
                 margin-top: 15px;
+                text-align: left;
             }
 
             .text-about {
@@ -34,6 +37,7 @@
                 margin-top: 10px;
                 padding: 5px;
                 overflow-wrap: break-word; 
+                text-align: justify;
             }
         }
     }
@@ -58,50 +62,55 @@
     }
 }
 
-//Media queries para responsividade 
+// Media queries para responsividade 
 
-@media only screen and (min-width: 800px) and (max-width: 1400px){
-    .text-title  {
-        font-size: 2.9em;
-    }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 800px){
+@media only screen and (min-width: 900px) {
     .text-title {
-        font-size: 2.5em;
-        width: auto;
+        width: 100%;
+        text-align: center;
     }
 
+    .text-about {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
     .card-about {
-        background-color: var(--bs-dark) !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        width: 100vh;
-        margin: 0;
+        width: 90% !important;
+    }
+
+    .text-title {
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-about {
+        font-size: 0.9em;
+        width: 100%;
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px){
-    .text-title  {
-        font-size: 1.9em;
-        width: auto;
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .card-about {
+        width: 80% !important;
+        align-items: center;
     }
 
-    .card-about  {
-        background-color: var(--bs-dark) !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    .text-title {
+        font-size: 0.9em;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-about {
+        display: none;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .img-girl {
         display: none;
     }
-}   
-
-
+}
