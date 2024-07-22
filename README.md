@@ -1,24 +1,16 @@
-# README
+# Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+O objetivo principal deste portfólio é apresentar minhas competências como desenvolvedor web, destacando a capacidade de construir aplicações completas e funcionais. Também visa servir como uma plataforma para o aprendizado contínuo e experimentação com novas tecnologias.
 
-Things you may want to cover:
+# Tecnologias Utilizadas
 
-* Ruby version
+* Ruby on Rails
+* HTML5
+* CSS3
+* JavaScript
 
-* System dependencies
+# Funcionalidades
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Apresentação de Projetos: Uma seção dedicada a exibir meus projetos com detalhes, links e descrições.
+* Sobre Mim: Informações pessoais e profissionais, destacando minha trajetória e habilidades.
+* Layout Responsivo: Design adaptável a diferentes dispositivos, proporcionando uma experiência consistente em desktops, tablets e smartphones.
