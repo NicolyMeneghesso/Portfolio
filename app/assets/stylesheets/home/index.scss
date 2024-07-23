@@ -15,13 +15,14 @@
     bottom: 0;
     width: 100%;
     padding: 4px;
-    background-color: rgb(19, 18, 18);
+    background-color:rgba(33, 37, 41, 0.952);  
     color: rgb(246, 9, 202);
     text-align: center;
     font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 
     .heart {
         display: inline-block;
@@ -66,34 +67,35 @@
     }
 }
 
-//Cards de fundo
-.row-body {
-    background-color: rgb(33, 37, 41); 
-    transition: background 0.2s linear;
-}
-
-.row-body-moon {
-    background-color: rgb(175, 212, 226);
-}
-
-.card-main {
-    background-color: rgb(134, 5, 102);
+.card-body-main {
+    background-color: transparent;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    transition: background 0.2s linear;
+    z-index: 2;
 }
 
-.card-main-moon {
-    background-color: rgb(241, 81, 196);
+.card-title-main {
+    width: 25%;
+    color: rgb(255, 255, 255);
+    transform: rotate(-5deg);
+    transform-origin: bottom left;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.1em;
 }
 
-@media only screen and (min-width: 450px) and (max-width: 550px){
-    .footer {
-        font-size: 0.6em;
-    }
-}
+.card-text-main {
+    color: rgb(255, 255, 255);
+    width: 56%;
+    font-size: 3.2em;
+    font-weight: 600;
+    letter-spacing: .6px;
+    font-family: 'Wellfleet', sans-serif;
+    text-align: left;
+    margin: 0 0 0 30px;
+} 
 
-@media only screen and (min-width: 300px) and (max-width: 450px){
-    .footer {
-        font-size: 0.5em;
-    }
-}
+

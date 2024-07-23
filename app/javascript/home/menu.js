@@ -1,16 +1,16 @@
-//CODIGO DO MENU TOGGLE
-document.addEventListener('DOMContentLoaded', function() {
-    let menuToggle = document.getElementById('menu-toggle')
-    let sidenav = document.getElementById("mySidenav")
-  
-    menuToggle.addEventListener('click', function() {
-        this.classList.toggle('change');
-        
-        // Verifica se o sidenav está visível
-        if (sidenav.style.transform === "translateX(0%)") {
-            sidenav.style.transform = "translateX(100%)"; // Esconde o sidenav
+document.addEventListener('DOMContentLoaded', function () {
+    let day = document.getElementById('day')
+
+    day.addEventListener('change', function () {
+        let body = document.body
+        let menu = document.getElementsByClassName('navbar')[0]; // Seleciona o primeiro elemento com a classe 'navbar'
+
+        if (this.checked) {
+            body.style.background = "linear-gradient(180deg, rgb(148, 163, 184) 0%, rgba(148, 163, 184, 0.986) 50%, rgba(148, 163, 184, 0.876) 100%)";
+            menu.style.background = "linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%)";
         } else {
-            sidenav.style.transform = "translateX(0%)"; // Mostra o sidenav
+            body.style.background = "linear-gradient(180deg, rgb(33, 37, 41) 0%, rgba(33, 37, 41, 0.986) 50%, rgba(33, 37, 41, 0.876) 100%)";
+            menu.style.background = "transparent";
         }
-    });
-});
+    })
+})

@@ -1,39 +1,50 @@
-    <!-- NAVIGATION -->
-
-<nav class="navbar navbar-dark fixed-top">
+<nav class="navbar navbar-dark bg-dark fixed-top pe-5 px-5">
     <div class="container-fluid">
-        <span class="nav-text">Nicoly Meneghesso</span>
+        <div class="nav-text">
+            <p>&lt;</p><p>N</p><p>i</p><p>h</p><p>&gt;</p>
+        </div>
 
-        <div>
-            <div class="menu-toggle" id="menu-toggle">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me">Sobre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projetos</a>
+            </li>
+        </ul>
+
+        <label class="custom-toggle">
+            <input type="checkbox" id="day">
+            <div class="slider"></div>
+        </label>
+
+        <!--Configuração Menu toggle que só aparece em telas menores-->
+
+        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" onclick="this.classList.toggle('change')">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-
-            <div id="mySidenav" class="sidenav">
-                <ul class="navbar-nav bg-dark flex-grow-1 pe-3">
-                    <li>
-                        <a class="nav-link" href="#home">Home</a>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-2 p-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Início</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="#about-me">About Me</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">Sobre</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="#projects">Projects</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
                     </li>
                 </ul>
-
-                <div class="col vert-text sidebar-items">
-                    <div class="sidebar-vertical-item github">
-                        <a href="https://github.com/NicolyMeneghesso" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                    <div class="sidebar-vertical-item linkedin">
-                        <a href="https://www.linkedin.com/in/nicoly-meneghesso-2b4577a9/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                    </div>   
-                </div> 
             </div>
         </div>
     </div>
 </nav>
-

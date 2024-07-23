@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     lightBeam.classList.add('light-beam');
 
     img.addEventListener('click', function() {
-        rowBody.classList.toggle('row-body-moon') //toggle ele adiciona/remove a classe da lista
-        cardMain.classList.toggle('card-main-moon')
-
+        
         lightBeam.classList.toggle('transparent')
     })
 

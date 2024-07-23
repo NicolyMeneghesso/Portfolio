@@ -1,147 +1,83 @@
-.navbar-dark {
-    background-color: rgb(33, 37, 41);
-}
-
-.menu-toggle {
-    /* Container para os itens do menu */   
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    cursor: pointer;
-
-    &:hover {
-        .bar1, .bar2, .bar3 {
-            margin: 6px 0;
-        }
-    }
-}
-
-.bar1, .bar2, .bar3 {
-    height: 5px;
-    background-color: rgb(255, 0, 183);
-    margin: 3px 0;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-.bar1 {
-    width: 50px;
-}
-
-.bar2 {
-    width: 40px;
-}
-
-.bar3 {
-    width: 30px;
-}
-
-.change .bar1 {
-    position: absolute;
-    transform: rotate(-135deg);
-}
-  
-.change .bar2 {
-    opacity: 0;
-}
-  
-.change .bar3 {
-    position: absolute;
-    transform: rotate(135deg);
-    width: 50px;
+.navbar-nav {
+    font: 28px 'Montserrat';
+    letter-spacing: .6px;
 }
 
 .nav-text {
-    font-family: 'Indie Flower';
-    color: rgb(255, 0, 183);
-    text-shadow: 1px 1px 2px rgb(22, 216, 242);
-    font-size: 38px;
+    font-family: "Manrope", sans-serif;
+    color: rgb(246, 9, 202);
+    font-size: 30px;
+    font-weight: 600; 
     cursor: default;
 }
 
-/*TELA DO MENU*/
-
-.sidenav {
-    position: fixed;
-    overflow-x: hidden;
-    z-index: 9999;
-    top: 70px;
-    right: 0;
-    width: 800px;
-    height: 100%;
-    padding-top: 36px;
-    transition: transform 0.6s ease-in-out; /* Suaviza a transição */
-    transform: translateX(100%); /* Inicialmente escondido */
+.nav-text p {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease; /* Adiciona a transição suave para a transformação e a cor */
     
-    @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
+    &:hover {
+        transform: translateY(-5px); /* Levanta o texto */
+        color: rgb(255, 222, 245); /* Altera a cor do texto ao passar o mouse */
     }
 }
 
-.navbar-nav {
-    float: right;   
-    margin-top: -36px;
-    padding-top: 5px;
-    font-size: 30px;
-    height: 100vh;
-    width: 48vh;
-    justify-content: flex-start;
+.nav-item, .nav-link {
+    margin-right: 15px;
+    font: 20px "Manrope", sans-serif;
+    color: rgb(246, 9, 202) !important;
+    font-weight: 600; 
+    transition: font-size 0.3s ease; /* Adiciona uma transição suave */
 
-    .nav-link {
-        padding-left: 15px;
-        padding-right: 2px;
+    &:hover {
+        font-size: 22px;
     }
 }
 
-.sidebar-items {
-    float: right;
-    height: 100vh;
-    margin-top: -36px;
-    font-size: 40px;
+.custom-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 
-    .sidebar-vertical-item {
-        width: 16vh;
-        padding: 26px;
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
     }
 
-    .github {
-        background-color: rgb(2, 2, 2);
+    .slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(82, 78, 81);
+        background: linear-gradient(90deg, rgb(82, 78, 81), rgb(129, 124, 128));
+        border-radius: 34px;
+        cursor: pointer;
+        transition: 0.4s;
 
-        a {
-            color: rgb(250, 249, 249);
-
-            &:hover {
-                color: rgb(0, 183, 255);
-            }
+        &:before {
+            position: absolute;
+            content: "";
+            height: 28px;
+            width: 28px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            background: url('moon') no-repeat center center / cover;
+            border-radius: 50%;
+            transition: 0.4s;
         }
     }
 
-    .linkedin {
-        background-color: rgb(6, 80, 192);
+    input:checked + .slider {   
+        background-color: rgb(194, 185, 194);
+        background: linear-gradient(90deg, rgb(194, 185, 194), rgb(222, 217, 222));
 
-        a {
-            color: rgb(2, 2, 2);
-
-            &:hover {
-                color: rgb(0, 255, 255);
-            }
+        &:before {
+            transform: translateX(26px);
+            background: url('sun') no-repeat center center / cover;
         }
-    }
-
-    a {
-        text-decoration: none;
-    }
-}
-        
-.vert-text {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg); 
-    text-align: center;
-}
-
-@media only screen and (min-width: 300px) and (max-width: 600px){
-    .menu-toggle {
-        display: none;
     }
 }

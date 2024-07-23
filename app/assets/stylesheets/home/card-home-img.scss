@@ -79,21 +79,6 @@
         }
     }
 
-    //Primeira estante + img
-    .shelf-top {
-        border-bottom: 9px solid var(--bs-gray-700);
-        z-index: 4;
-        height: 140px;
-        width: 24%;
-        left: 37%;
-        top: 190px;
-
-        .shelf-top-books {
-            flex: 0 0 95%;
-            margin-bottom: 2px;
-        }
-    }
-
     //Segunda estante + img
     .shelf-bottom {
         border-bottom: 13px solid var(--bs-gray-700);
