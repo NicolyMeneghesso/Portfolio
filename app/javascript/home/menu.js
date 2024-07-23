@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (this.checked) {
             body.style.background = "linear-gradient(180deg, rgb(148, 163, 184) 0%, rgba(148, 163, 184, 0.986) 50%, rgba(148, 163, 184, 0.876) 100%)";
-            menu.style.background = "linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%)";
+            menu.style.background = "linear-gradient(180deg, rgb(148, 163, 184) 0%, rgba(148, 163, 184, 0.986) 50%, rgba(148, 163, 184, 0.876) 100%)";
         } else {
             body.style.background = "linear-gradient(180deg, rgb(33, 37, 41) 0%, rgba(33, 37, 41, 0.986) 50%, rgba(33, 37, 41, 0.876) 100%)";
             menu.style.background = "transparent";
