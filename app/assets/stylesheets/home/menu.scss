@@ -1,6 +1,11 @@
 .navbar {
-    background: linear-gradient(180deg, rgb(34, 41, 55) 0%, rgba(34, 41, 55, 0.978) 50%, rgba(34, 41, 55, 0.858) 100%);
+    background: rgb(34, 41, 55); 
+    transition: background 0.5s ease;
 }
+
+.menu-sun {
+    background: linear-gradient(180deg, rgb(139, 155, 178) 0%, rgba(139, 155, 178, 0.986) 50%, rgba(139, 155, 178, 0.876) 100%);
+}   
 
 .navbar-nav {
     font: 28px 'Montserrat';
@@ -11,6 +16,7 @@
     font-family: "Manrope", sans-serif;
     font-size: 30px;
     font-weight: 600; 
+    color: rgb(218, 112, 214);
     cursor: default;
     margin-left: 150px;
     padding-top: 5px;
@@ -21,17 +27,37 @@
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease; 
     margin: 0;
+    
+    &:hover {
+        transform: translateY(-6px); /* Levanta o texto */
+        color: rgb(250, 220, 240); 
+    }
+}
+
+.nav-text-sun {
+    color: rgb(10, 11, 14);
+    transition: transform 0.3s ease, color 0.3s ease; 
+
+    &:hover {
+        transform: translateY(-6px); /* Levanta o texto */
+        color: rgb(250, 220, 240); 
+    }
 }
 
 .nav-item, .nav-link {
     font: 20px "Manrope", sans-serif;
-    font-weight: 600; 
+    font-weight: 700; 
     padding: 0 12px 0 12px;
-    transition: font-size 0.3s ease; /* Adiciona uma transição suave */
+    transition: font-size 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave */
 
     &:hover {
         font-size: 23px;
     }
+}
+
+.nav-link-sun {
+    color: rgb(10, 11, 14) !important;
+    transition: color 0.3s ease;
 }
 
 .custom-toggle {
@@ -54,7 +80,7 @@
         right: 0;
         bottom: 0;
         background-color: rgb(82, 78, 81);
-        background: linear-gradient(90deg, rgba(82, 78, 81, 0.9) 0%, rgba(129, 124, 128, 0.793) 50%, rgba(150, 143, 148, 0.744) 100%); 
+        background: linear-gradient(90deg, rgba(82, 78, 81, 0.9) 0%, rgba(129, 124, 128, 0.9) 50%, rgba(150, 143, 148, 0.9) 100%); 
         border: solid 2px #fff;
         border-radius: 40px;
         cursor: pointer;
