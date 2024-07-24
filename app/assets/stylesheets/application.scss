@@ -4,26 +4,23 @@ body, html {
     height: 100vh;
     overflow-y: auto;
     padding: 0;
-    background: linear-gradient(180deg, rgb(33, 37, 41) 0%, rgba(33, 37, 41, 0.986) 50%, rgba(33, 37, 41, 0.876) 100%);
-    background-color:rgb(33, 37, 41);  
 
-     /* Personalização da barra de rolagem */   
+    /* Personalização da barra de rolagem */   
      &::-webkit-scrollbar {
         width: 12px; /* Largura da barra de rolagem */
     }
 
     &::-webkit-scrollbar-track {
-        background: rgb(96, 97, 98);/* Cor do fundo da barra de rolagem */
+        background: rgb(71, 78, 86);/* Cor do fundo da barra de rolagem */
     }
 
     &::-webkit-scrollbar-thumb {
-        background: rgba(33, 37, 41, 0.755);  /* Cor da barra de rolagem */
+        background: rgba(31, 41, 55, 0.755);  /* Cor da barra de rolagem */
         border-radius: 6px; /* Borda arredondada da barra de rolagem */
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: rgb(33, 37, 41);  /* Cor da barra de rolagem quando hover */
+        background: rgb(31, 41, 55);  /* Cor da barra de rolagem quando hover */
     }
 
-    transition: background 0.5s ease; /* Transição suave para mudança de background */
 }

@@ -1,3 +1,7 @@
+.navbar {
+    background: linear-gradient(180deg, rgb(34, 41, 55) 0%, rgba(34, 41, 55, 0.978) 50%, rgba(34, 41, 55, 0.858) 100%);
+}
+
 .navbar-nav {
     font: 28px 'Montserrat';
     letter-spacing: .6px;
@@ -5,31 +9,28 @@
 
 .nav-text {
     font-family: "Manrope", sans-serif;
-    color: rgb(246, 9, 202);
     font-size: 30px;
     font-weight: 600; 
     cursor: default;
+    margin-left: 150px;
+    padding-top: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .nav-text p {
     display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease; /* Adiciona a transição suave para a transformação e a cor */
-    
-    &:hover {
-        transform: translateY(-5px); /* Levanta o texto */
-        color: rgb(255, 222, 245); /* Altera a cor do texto ao passar o mouse */
-    }
+    transition: transform 0.3s ease, color 0.3s ease; 
+    margin: 0;
 }
 
 .nav-item, .nav-link {
-    margin-right: 15px;
     font: 20px "Manrope", sans-serif;
-    color: rgb(246, 9, 202) !important;
     font-weight: 600; 
+    padding: 0 12px 0 12px;
     transition: font-size 0.3s ease; /* Adiciona uma transição suave */
 
     &:hover {
-        font-size: 22px;
+        font-size: 23px;
     }
 }
 
@@ -38,6 +39,7 @@
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-right: 150px;
 
     input {
         opacity: 0;
@@ -52,16 +54,17 @@
         right: 0;
         bottom: 0;
         background-color: rgb(82, 78, 81);
-        background: linear-gradient(90deg, rgb(82, 78, 81), rgb(129, 124, 128));
-        border-radius: 34px;
+        background: linear-gradient(90deg, rgba(82, 78, 81, 0.9) 0%, rgba(129, 124, 128, 0.793) 50%, rgba(150, 143, 148, 0.744) 100%); 
+        border: solid 2px #fff;
+        border-radius: 40px;
         cursor: pointer;
         transition: 0.4s;
 
         &:before {
             position: absolute;
             content: "";
-            height: 28px;
-            width: 28px;
+            height: 26px;
+            width: 26px;
             left: 3px;
             bottom: 3px;
             background-color: white;

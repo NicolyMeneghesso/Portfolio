@@ -7,22 +7,21 @@
     outline: 0;
 }
 
-//conf do footer
+//configuração do footer
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 4px;
-    background-color:rgba(33, 37, 41, 0.952);  
+    background: linear-gradient(180deg, rgb(30, 30, 30) 0%, rgba(30, 30, 30, 0.978) 50%, rgba(30, 30, 30, 0.858) 100%); 
     color: rgb(246, 9, 202);
     text-align: center;
     font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
 
     .heart {
         display: inline-block;
