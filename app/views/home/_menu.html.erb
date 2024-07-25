@@ -1,10 +1,38 @@
-<nav class="navbar navbar-dark fixed-top">
-    <div class="container-fluid">
-        <div class="nav-text">
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-brand">
+        <div class="nav-text d-flex">
             <p>&lt;</p><p>N</p><p>i</p><p>h</p><p>&gt;</p>
         </div>
+    </div>
 
-        <ul class="nav justify-content-center" id="nav-link">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projetos</a>
+        </li>
+      </ul>
+    </div>
+
+    <label class="custom-toggle d-none d-lg-inline-block">
+        <input type="checkbox" id="day">
+        <div class="slider"></div>
+    </label>
+    
+  </div>
+</nav> 
+
+<!--    <ul class="nav justify-content-center" id="nav-link">
             <li class="nav-item">
                 <a class="nav-link active" style="color: rgb(218, 112, 214);" aria-current="page" href="#home">Início</a>
             </li>
@@ -21,11 +49,9 @@
             <div class="slider"></div>
         </label>
 
-        <!--Configuração Menu toggle que só aparece em telas menores-->
 
-        <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" 
-            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" onclick="this.classList.toggle('change')">
-                <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -47,4 +73,5 @@
             </div>
         </div>
     </div>
-</nav>
+</nav> -->
+

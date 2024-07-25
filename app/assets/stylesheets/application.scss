@@ -3,6 +3,7 @@
 body, html {
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 0;
     background-color: rgb(34, 41, 55); 
     background: linear-gradient(180deg, rgb(34, 41, 55) 0%, rgba(34, 41, 55, 0.978) 50%, rgba(34, 41, 55, 0.858) 100%);

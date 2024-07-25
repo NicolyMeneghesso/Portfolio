@@ -1,16 +1,20 @@
-<div class="container-fluid p-0" style="max-height: 100vh; color: rgb(34, 41, 55);" id="home">
+<div class="container-fluid p-0" id="home">
 
     <%= render partial: "home/menu" %>
-
-        <div class="col">
-            <div class="card-main d-flex justify-content-center align-items-center" id="card-main">
-                <div class="card-body-main text-center">
-                    <p class="card-title-main fw-semibold" >👋 Hi, I'm Nicoly</p>
-                    <p class="card-text-main">E apresento a vocês o meu primeiro blog, ou talvez um portfólio, ou melhor um estudo diário.</p>
-                </div>
+    
+    <div class="row align-items-center justify-content-left vh-100">
+        <div class="col-8">
+            <div class="card-body-main">
+                <p class="title-main">Nicoly Meneghesso</p>
+                <!--<p class="card-text-main">E apresento a vocês o meu primeiro blog, ou talvez um portfólio, ou melhor um estudo diário.</p>-->
+                <p class="text-main" id="text-main">Aspirante a Desenvolvedora</p>
+                <p class="interests">Livros | Café | Códigos</p>
             </div>
         </div>
+        <div class="col" style="color: white"> OI
+        </div>
     </div>
+
         
     <%= render partial: "home/about" %>
     <%= render partial: "home/projects" %>
