@@ -19,4 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
             link.classList.toggle('nav-link-sun')
         })
     })
-})
+});
