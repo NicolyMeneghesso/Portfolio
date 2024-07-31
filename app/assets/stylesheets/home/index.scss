@@ -85,7 +85,7 @@
         font-weight: 700;
         letter-spacing: .6px;
         font-family: 'Mulish';
-        background: linear-gradient(125deg, rgb(246, 111, 242), rgb(255, 105, 180));
+        background: linear-gradient(145deg, rgb(250, 159, 247), rgb(255, 105, 180));
         background-clip: text;
         color: transparent;
         -webkit-background-clip: text;
@@ -95,7 +95,28 @@
 
     .interests {
         font-size: 1.5em;
+        font-weight: 500;
         font-family: 'Manrope';
         color: rgb(169, 142, 177);
+    }
+}
+
+.light-mode {
+    .card-body-main {
+        .title-main {
+            color: rgb(75, 85, 99);
+        }
+
+        .text-main {
+            background: linear-gradient(145deg, rgb(37, 47, 63) 50%, rgba(75, 85, 99, 0.926) 100%);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .interests {
+            color: rgb(75, 85, 99);
+        }
     }
 }

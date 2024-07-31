@@ -12,7 +12,7 @@ $color-background-light: rgb(139, 155, 178);
     width: 100%;
 
     &.menu-sun {
-        background: linear-gradient(180deg, $color-background-light 0%, rgba($color-background-light, 0.986) 50%, rgba($color-background-light, 0.876) 100%);
+        background: linear-gradient(180deg, rgb(220, 168, 191) 0%, rgb(220, 168, 191) 100%);
     }
 }
 
@@ -83,7 +83,6 @@ $color-background-light: rgb(139, 155, 178);
     display: inline-block;
     width: 50px;
     height: 28px;
-    margin-right: 10%;
 
     input {
         opacity: 0;
@@ -127,36 +126,36 @@ $color-background-light: rgb(139, 155, 178);
     }
 }
 
+.moon-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    padding: 0 2%;
+}
+
 // Responsividade
-@media (min-width: 991px) {
+@media (min-width: 993px) {
     .nav-text-2 {
         display: none;
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 991.5px) {
     .nav-text {
         display: none;
     }
 
-    .navbar-nav {
-        margin-left: auto; /* Alinha os itens de navegação à direita */
+    .custom-toggle {
+        display: none;
     }
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
-    .custom-toggle {
-        width: 40px; 
-        height: 28px; 
-        margin-left: 25%;
-    }
 
-    .custom-toggle .slider:before {
-        width: 60%; 
-        height: 80%; 
-    }
-
-    .custom-toggle input:checked + .slider:before {
-        transform: translateX(12px); 
+@media (max-width: 991.5px) {
+    .moon-icon {
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
     }
 }

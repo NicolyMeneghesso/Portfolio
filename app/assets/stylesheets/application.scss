@@ -15,19 +15,19 @@ body, html {
     }
 
     &::-webkit-scrollbar-track {
-        background: rgb(71, 78, 86);/* Cor do fundo da barra de rolagem */
+        background: rgb(81, 87, 95);/* Cor do fundo da barra de rolagem */
     }
 
     &::-webkit-scrollbar-thumb {
-        background: rgba(31, 41, 55, 0.755);  /* Cor da barra de rolagem */
+        background: linear-gradient(180deg, rgb(56, 65, 83) 0%, rgba(56, 65, 83, 0.978) 50%, rgba(56, 65, 83, 0.858) 100%); /* Cor da barra de rolagem */
         border-radius: 6px; /* Borda arredondada da barra de rolagem */
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: rgb(31, 41, 55);  /* Cor da barra de rolagem quando hover */
+        background: rgb(41, 51, 66);  /* Cor da barra de rolagem quando hover */
     }
 }
 
 .body-sun {
-    background: linear-gradient(180deg, rgb(139, 155, 178) 0%, rgba(139, 155, 178, 0.986) 50%, rgba(139, 155, 178, 0.876) 100%);
+    background: linear-gradient(180deg, rgb(220, 168, 191) 0%, rgb(215, 169, 190) 100%);
 }
