@@ -85,12 +85,14 @@
         font-weight: 700;
         letter-spacing: .6px;
         font-family: 'Mulish';
-        background: linear-gradient(145deg, rgb(250, 159, 247), rgb(255, 105, 180));
+        background: linear-gradient(179.5deg, rgb(250, 159, 247), rgb(255, 105, 180));
         background-clip: text;
         color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0 auto;
+        white-space: pre-wrap;
+        display: inline;
     }
 
     .interests {
@@ -101,6 +103,19 @@
     }
 }
 
+.btn-main {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+    padding: 0.95rem 1.25rem !important;
+    font-size: 1.25rem;
+    color: white; 
+
+    &:hover {
+        background-color: #ef93c1;
+        color: rgb(6, 6, 6);
+    }
+}
+
 .light-mode {
     .card-body-main {
         .title-main {
@@ -108,7 +123,7 @@
         }
 
         .text-main {
-            background: linear-gradient(145deg, rgb(37, 47, 63) 50%, rgba(75, 85, 99, 0.926) 100%);
+            background: linear-gradient(179.5deg, rgb(37, 47, 63) 50%, rgba(97, 117, 133, 0.92) 100%);
             background-clip: text;
             color: transparent;
             -webkit-background-clip: text;
