@@ -73,10 +73,10 @@
     margin-left: 20%;
 
     .title-main {
-        color: rgb(169, 142, 177);
+        color: rgba(169, 142, 177, 0.658);
         font-family: 'Manrope';
         font-weight: 600;
-        font-size: 2em;
+        font-size: 1.6em;
         margin: 0 auto;
     }
 
@@ -103,17 +103,63 @@
     }
 }
 
-.btn-main {
-    background-color: #ff69b4;
-    border-color: #ff69b4;
-    padding: 0.95rem 1.25rem !important;
-    font-size: 1.25rem;
-    color: white; 
+/* .btn-main {
+    letter-spacing: 0;
 
-    &:hover {
-        background-color: #ef93c1;
-        color: rgb(6, 6, 6);
+    &:hover,
+    &:active {
+        letter-spacing: 5px;
     }
+
+    &:after,
+    &:before {
+        backface-visibility: hidden;
+        border: 1px solid rgba(255, 255, 255, 0); // Ajuste para SCSS, substitui #fff por rgb
+        bottom: 0px;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        transition: all 280ms ease-in-out;
+        width: 0;
+    }
+
+    &:hover:after,
+    &:hover:before {
+        backface-visibility: hidden;
+        border-color: #fff;
+        transition: width 350ms ease-in-out;
+        width: 70%;
+    }
+
+    &:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 70%;
+    }
+} */
+
+
+.btn-main {
+    background: linear-gradient(179.5deg, rgb(226, 156, 222), rgba(226, 156, 222, 0.8)); 
+    font-size: 1.25rem !important; 
+    padding: 0.85rem 1.8rem !important;
+    border-radius: 1.2rem !important;
+    border: none !important;
+    box-shadow: 2px 1.8px 2px rgba(226, 156, 222, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease !important;
+  
+    &:hover {
+        background: linear-gradient(179.5deg, rgba(250, 159, 247, 1), rgba(255, 105, 180, 1)); 
+        box-shadow: 4px 3.6px 4px rgba(255, 105, 180, 0.7); 
+        transform: translateY(-2px); 
+    }
+
+    &:active {
+        background: linear-gradient(179.5deg, rgba(140, 110, 143, 0.9), rgba(120, 85, 120, 0.9)); 
+        box-shadow: 2px 1.8px 2px rgba(140, 110, 143, 0.5); /* Ajustar a cor do box-shadow */
+        transform: translateY(0); 
+    } 
 }
 
 .light-mode {
@@ -134,4 +180,22 @@
             color: rgb(75, 85, 99);
         }
     }
+
+   .btn-main {
+    background: linear-gradient(179.5deg, rgba(65, 75, 89, 0.8), rgba(87, 107, 123, 0.8));   
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); 
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease !important;
+
+    &:hover {
+        background: linear-gradient(179.5deg, rgba(75, 85, 99, 0.3), rgba(97, 117, 133, 0.3)); 
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); 
+        transform: translateY(-2px); 
+    }
+
+    &:active {
+        background: linear-gradient(179.5deg, rgba(75, 85, 99, 0.4), rgba(97, 117, 133, 0.4)); 
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); 
+        transform: translateY(0); 
+    }
+}
 }
