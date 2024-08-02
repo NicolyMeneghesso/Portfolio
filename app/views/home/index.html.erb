@@ -3,17 +3,19 @@
     <%= render partial: "home/menu" %>
     
     <div class="row row-main align-items-center justify-content-left vh-100">
-        <div class="col-8">
+        <div class="col-12 col-lg-7">
             <div class="card-body-main" >
                 <p class="title-main">Nicoly Meneghesso</p>
                 <!--<p class="card-text-main">E apresento a vocês o meu primeiro blog, ou talvez um portfólio, ou melhor um estudo diário.</p>-->
                 
+                <!-- Texto principal -->
                 <div class="text-main-container">
                     <p class="text1">De Engenheira Civil para </p><br>
                     <p class="text2" id="text-main">Aspirante a </p>
                 </div>
                 <p class="interests">Livros | Café | Códigos</p>
 
+                <!-- Botões responsivos -->
                 <div class="d-grid gap-2 d-md-block">
                     <a class="btn btn-outline-dark btn-main me-md-3" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/nicolymeneghesso" role="button">LinkedIn</a>
                     <a class="btn btn-outline-dark btn-main" target="_blank" rel="noopener noreferrer" href="https://github.com/NicolyMeneghesso?tab=overview&from=2024-07-01&to=2024-07-31" role="button">GitHub</a>
@@ -21,10 +23,15 @@
 
             </div>
         </div>
-        <div class="col">
+        <div class="col-lg-5 d-none d-md-block">
             <div class="animation-container">
-                <svg viewBox="0 0 100 100" class="diamond-svg">
-                    <polygon points="50,10 90,50 50,90 10,50" class="diamond-shape" />
+                <svg viewBox="0 0 100 100" class="svg-container">
+                    <!-- Quadrado -->
+                    <rect x="20" y="20" width="60" height="60" class="square-shape" />
+                    <!-- Diamante superior esquerdo -->
+                    <polygon points="20,20 30,10 40,20 30,30" class="diamond-shape" />
+                    <!-- Diamante inferior direito -->
+                    <polygon points="60,60 70,50 80,60 70,70" class="diamond-shape" />
                 </svg>
             </div>
         </div>
