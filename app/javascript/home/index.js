@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let textMain = document.getElementById('text-main')
-    let textContent = "Aspirante a \nDesenvolvedora"
+    let textContent = "\nDesenvolvedora"
     
     let currentChar = 0 //Um índice que acompanha a posição atual no texto.
     let typingSpeed = 200 //A velocidade de digitação

@@ -7,12 +7,13 @@ $color-background-light: rgb(139, 155, 178);
 
 // Estilos da Navbar
 .navbar {
-    background: linear-gradient(90deg, $color-background-dark 0%, rgba($color-background-dark, 0.904) 100%);
+    background: linear-gradient(180deg, rgb(2, 6, 23), rgba(2, 6, 23, 0.951));
     transition: background 0.5s ease;
     width: 100%;
+    height: 8%;
 
     &.menu-sun {
-        background: linear-gradient(180deg, rgb(220, 168, 191) 0%, rgb(220, 168, 191) 100%);
+        background: rgb(255, 122, 215);
     }
 }
 
@@ -20,7 +21,7 @@ $color-background-light: rgb(139, 155, 178);
 
 .nav-text, .nav-text-2 {
     font-family: "Manrope", sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: $color-dark-mode;
     cursor: default;

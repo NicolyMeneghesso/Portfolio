@@ -2,26 +2,31 @@
 
     <%= render partial: "home/menu" %>
     
-    <div class="row align-items-center justify-content-left vh-100">
+    <div class="row row-main align-items-center justify-content-left vh-100">
         <div class="col-8">
-            <div class="card-body-main">
+            <div class="card-body-main" >
                 <p class="title-main">Nicoly Meneghesso</p>
                 <!--<p class="card-text-main">E apresento a vocês o meu primeiro blog, ou talvez um portfólio, ou melhor um estudo diário.</p>-->
                 
                 <div class="text-main-container">
-                    <p class="text-main" id="text-main"></p>
-                    <span class="cursor" id="cursor">&nbsp;</span>
+                    <p class="text1">De Engenheira Civil para </p><br>
+                    <p class="text2" id="text-main">Aspirante a </p>
                 </div>
                 <p class="interests">Livros | Café | Códigos</p>
 
                 <div class="d-grid gap-2 d-md-block">
-                    <a class="btn btn-outline-dark btn-main me-md-3" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nicoly-meneghesso-2b4577a9/" role="button">LinkedIn</a>
+                    <a class="btn btn-outline-dark btn-main me-md-3" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/nicolymeneghesso" role="button">LinkedIn</a>
                     <a class="btn btn-outline-dark btn-main" target="_blank" rel="noopener noreferrer" href="https://github.com/NicolyMeneghesso?tab=overview&from=2024-07-01&to=2024-07-31" role="button">GitHub</a>
                 </div>
 
             </div>
         </div>
-        <div class="col" style="color: white"> OI
+        <div class="col">
+            <div class="animation-container">
+                <svg viewBox="0 0 100 100" class="diamond-svg">
+                    <polygon points="50,10 90,50 50,90 10,50" class="diamond-shape" />
+                </svg>
+            </div>
         </div>
     </div>
 
@@ -29,7 +34,4 @@
     <%= render partial: "home/about" %>
     <%= render partial: "home/projects" %>
     
-    <div class="footer py-2">
-      Construído do zero com <span class="heart"></span> © Copyright 2024, Nicoly Meneghesso. All rights reserved.
-    </div> 
 </div>

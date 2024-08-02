@@ -5,9 +5,7 @@ body, html {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0;
-    background-color: rgb(34, 41, 55); 
-    background: linear-gradient(180deg, rgb(34, 41, 55) 0%, rgba(34, 41, 55, 0.978) 50%, rgba(34, 41, 55, 0.858) 100%);
-    transition: background 0.5s ease; 
+    background: linear-gradient(180deg, rgb(2, 6, 23), rgba(2, 6, 23, 0.951));
 
     /* Personalização da barra de rolagem */   
      &::-webkit-scrollbar {
@@ -29,5 +27,64 @@ body, html {
 }
 
 .body-sun {
-    background: linear-gradient(180deg, rgb(220, 168, 191) 0%, rgb(215, 169, 190) 100%);
+    background: rgb(255, 122, 215);
+}
+
+//configuração do footer
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 4px;
+    background: linear-gradient(180deg, rgb(30, 30, 30) 0%, rgba(30, 30, 30, 0.978) 50%, rgba(30, 30, 30, 0.858) 100%); 
+    color: rgb(246, 9, 202);
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heart {
+        display: inline-block;
+        position: relative;
+        margin: 0 8px;
+        height: 9px;
+        width: 9px;
+        background-color: rgb(246, 9, 202);
+        transform: rotate(45deg);
+        margin-bottom: 3px;
+        animation: heartbeat 1s infinite; /* Aplica a animação */
+
+
+         &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            background-color: rgb(246, 9, 202);
+            border-radius: 50%;
+        }
+
+        &::before {
+            top: -7px;
+            left: 0;
+        }
+
+        &::after {
+            top: 0;
+            left: -7px;
+        }
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1) rotate(45deg);
+    }
+    50% {
+        transform: scale(1.2) rotate(45deg);
+    }
 }
