@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let menu = document.getElementsByClassName('navbar')[0]
         menu.classList.toggle('menu-sun')
         
-        let navTextElements = document.querySelectorAll('.nav-text')
+        let navTextElements = document.querySelectorAll('.nav-text-2, .nav-text')
         navTextElements.forEach(function (text) {
             text.classList.toggle('nav-text-sun')
         });

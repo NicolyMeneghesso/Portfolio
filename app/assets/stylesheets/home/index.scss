@@ -14,10 +14,8 @@
 
 .card-body-main {
     background-color: transparent;
-    text-align: left;
-    width: 84%;
-    margin-left: 20%;
     z-index: 3;
+    justify-items: center;
 
     .title-main {
         color: rgba(169, 142, 177, 0.658);
@@ -43,7 +41,7 @@
     }
 
     .text2 {
-        font-size: 3.9em;
+        font-size: 3.5em;
         font-weight: 700;
         letter-spacing: .6px;
         font-family: 'Mulish';

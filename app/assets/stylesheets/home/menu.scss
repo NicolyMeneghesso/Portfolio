@@ -17,6 +17,14 @@ $color-background-light: rgb(139, 155, 178);
     }
 }
 
+.moon-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    padding: 0 3%;
+}
+
 // Estilos do texto da Navbar
 
 .nav-text, .nav-text-2 {
@@ -42,8 +50,6 @@ $color-background-light: rgb(139, 155, 178);
     }
 
     &.nav-text-sun {
-        color: $color-light-mode;
-
         p {
             color: $color-light-mode;
 
@@ -97,7 +103,7 @@ $color-background-light: rgb(139, 155, 178);
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(90deg, rgba(82, 78, 81, 0.9) 0%, rgba(129, 124, 128, 0.9) 50%, rgba(150, 143, 148, 0.9) 100%);
+        background: linear-gradient(90deg, rgba(102, 97, 100, 0.9) 0%, rgba(129, 124, 128, 0.9) 50%, rgba(150, 143, 148, 0.9) 100%);
         border: solid 2px #fff;
         border-radius: 40px;
         cursor: pointer;
@@ -125,14 +131,6 @@ $color-background-light: rgb(139, 155, 178);
             background: url('sun') no-repeat center center / cover;
         }
     }
-}
-
-.moon-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: rgb(252, 252, 252);
-    padding: 0 2%;
 }
 
 // Responsividade
