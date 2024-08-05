@@ -5,29 +5,46 @@ body, html {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0;
-    background: linear-gradient(180deg, rgb(2, 6, 23), rgba(2, 6, 23, 0.951));
+    background: linear-gradient(185deg, rgb(2, 6, 23), rgba(2, 6, 23, 0.951));
 
     /* Personalização da barra de rolagem */   
      &::-webkit-scrollbar {
-        width: 12px; /* Largura da barra de rolagem */
+        width: 12px; 
     }
 
     &::-webkit-scrollbar-track {
-        background: rgb(81, 87, 95);/* Cor do fundo da barra de rolagem */
+        background: rgba(50, 62, 74, 0.692);
     }
 
     &::-webkit-scrollbar-thumb {
-        background: linear-gradient(180deg, rgb(56, 65, 83) 0%, rgba(56, 65, 83, 0.978) 50%, rgba(56, 65, 83, 0.858) 100%); /* Cor da barra de rolagem */
-        border-radius: 6px; /* Borda arredondada da barra de rolagem */
+        background: linear-gradient(180deg, rgb(2, 6, 23) 10%, rgb(36, 2, 63) 35%, rgb(56, 5, 104) 100%);
+        border-radius: 6px; 
     }
 
     &::-webkit-scrollbar-thumb:hover {
-        background: rgb(41, 51, 66);  /* Cor da barra de rolagem quando hover */
+        background: rgb(56, 70, 90);  
     }
 }
 
 .body-sun {
-    background: rgb(255, 122, 215);
+    background: rgb(235, 140, 188);
+
+    &::-webkit-scrollbar {
+        width: 12px; /* Largura da barra de rolagem */
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: rgba(244, 197, 219, 0.637);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(185deg, rgb(229, 153, 188) 0%, rgb(230, 144, 187) 30%, rgb(212, 131, 172) 60%, rgb(212, 131, 172) 100%); /* Gradiente inverso */
+        border-radius: 6px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgb(242, 168, 236);
+    }
 }
 
 //configuração do footer
