@@ -27,7 +27,7 @@ body, html {
 }
 
 .body-sun {
-    background: rgb(235, 140, 188);
+    background: rgb(201, 151, 192);
 
     &::-webkit-scrollbar {
         width: 12px; /* Largura da barra de rolagem */
@@ -38,12 +38,12 @@ body, html {
     }
     
     &::-webkit-scrollbar-thumb {
-        background: linear-gradient(185deg, rgb(229, 153, 188) 0%, rgb(230, 144, 187) 30%, rgb(212, 131, 172) 60%, rgb(212, 131, 172) 100%); /* Gradiente inverso */
+        background: linear-gradient(185deg, rgb(184, 135, 167) 0%, rgb(184, 135, 167) 40%, rgb(213, 163, 196) 100%);
         border-radius: 6px;
     }
     
     &::-webkit-scrollbar-thumb:hover {
-        background: rgb(242, 168, 236);
+        background: rgb(228, 163, 223);
     }
 }
 

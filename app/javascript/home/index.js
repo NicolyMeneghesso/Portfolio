@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             // Adiciona a animação de piscar após o texto ser deletado
             cursor.style.animation = 'blink 0.7s step-end infinite';
-            
+
             // Deixe o cursor piscando e aguarde antes de reiniciar
             cursor.style.animation = "blink 0.7s step-end infinite";
             setTimeout(typeCode, pauseBeforeRestart);
