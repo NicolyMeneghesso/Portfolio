@@ -141,7 +141,7 @@
 .light-mode {
 
     .row-main {
-        background: linear-gradient(185deg, rgb(184, 135, 167) 0%, rgb(184, 135, 167) 40%, rgb(210, 161, 193) 70%, rgb(238, 192, 222) 100%);
+        background: linear-gradient(185deg, rgb(184, 135, 167) 0%, rgb(184, 135, 167) 35%, rgb(235, 188, 219) 70%, rgb(238, 192, 222) 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 20% 95%, 0 85%);
     }
 
@@ -176,6 +176,43 @@
             color: rgb(255, 255, 255) !important;
         }
     }
+
+      // ANIMAÇÃO NO MODO CLARO
+      @keyframes drawSquareLight {
+        0% {
+            stroke-dasharray: 0 800;
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dasharray: 800 0;
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes drawDiamondLight {
+        0% {
+            stroke-dasharray: 10, 10;
+            stroke-dashoffset: 400; // Começa fora do elemento
+        }
+        100% {
+            stroke-dasharray: 10, 10;
+            stroke-dashoffset: 0; // Desenha o elemento
+        }
+    }
+
+    .shape-container {
+
+        .square {
+            stroke: rgba(48, 50, 53, 0.8);
+            animation: drawSquareLight 5s ease forwards;
+            animation-fill-mode: forwards; // Mantém o estado final da animação
+        }
+
+        .diamond {
+            stroke: rgba(48, 50, 53, 0.8);
+            animation: drawDiamondLight 8s ease infinite;
+        }
+    }
 }
 
 //ANIMAÇÃO
@@ -192,11 +229,11 @@
 
 @keyframes drawDiamond {
     0% {
-        stroke-dasharray: 10, 10;
+        stroke-dasharray: 400;
         stroke-dashoffset: 400; // Começa fora do elemento
     }
     100% {
-        stroke-dasharray: 10, 10;
+        stroke-dasharray: 400;
         stroke-dashoffset: 0; // Desenha o elemento
     }
 }
@@ -207,12 +244,12 @@
     transform: translateY(-50%) translateX(100%);
 
     .square {
-        width: 235px;
-        height: 235px;
+        width: 245px;
+        height: 245px;
         fill: transparent;
         stroke: rgba(169, 142, 177, 0.755);
         stroke-width: 1.8px;
-        animation: drawSquare 5s ease forwards;
+        animation: drawSquare 6s ease forwards;
         animation-fill-mode: forwards; // Mantém o estado final da animação
     }
 
@@ -222,17 +259,14 @@
         fill: transparent;
         stroke: rgba(169, 142, 177, 0.755);
         stroke-width: 1.8px;
-        stroke-dasharray: 10, 10;
-        animation: drawDiamond 8s ease infinite;
+        stroke-dasharray: 400; 
+        stroke-dashoffset: 400;
+        animation: drawDiamond 5s ease infinite;
+        animation-delay: 40s; // A cada 10 segundos, o diamante será redesenhado
     }
 
     .diamond.top {
-        transform: rotate(45deg) translateY(-125px); // Aproximar do quadrado
-        animation-delay: 2s;
-    }
-
-    .diamond.bottom {
-        transform: rotate(45deg) translateY(125px); // Aproximar do quadrado
+        transform: rotate(45deg) translateY(-105px) translateX(-50px); // Aproximar do quadrado
         animation-delay: 2s;
     }
 }
