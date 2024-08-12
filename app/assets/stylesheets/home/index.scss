@@ -16,13 +16,25 @@
     position: relative; 
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(-10deg); // Posição inicial
+    }
+    50% {
+        transform: translateY(-10px) rotate(-10deg); // Move a imagem 10px para cima
+    }
+    100% {
+        transform: translateY(0) rotate(-10deg); // Retorna à posição inicial
+    }
+}
+
 .vscode-card {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 2%;
-    transform: translateY(-50%) rotate(-10deg);
     width: 22%;
     border-radius: 15%;
+    animation: float 3s ease-in-out infinite; // Aplica a animação de flutuação
 
     .vscode-main {
         width: 100%;
