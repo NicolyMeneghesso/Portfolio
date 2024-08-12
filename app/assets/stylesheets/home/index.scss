@@ -204,13 +204,15 @@
 
         .square {
             stroke: rgba(48, 50, 53, 0.8);
-            animation: drawSquareLight 5s ease forwards;
+            animation: drawSquareLight 6s ease forwards;
             animation-fill-mode: forwards; // Mantém o estado final da animação
         }
 
         .diamond {
             stroke: rgba(48, 50, 53, 0.8);
-            animation: drawDiamondLight 8s ease infinite;
+            animation: drawDiamond 15s ease infinite; // 60 segundos para desenhar e 60 para apagar
+            animation-direction: alternate; // Faz a animação ir e voltar
+            animation-delay: 2s; // Delay inicial de 2 segundos
         }
     }
 }
@@ -229,12 +231,16 @@
 
 @keyframes drawDiamond {
     0% {
-        stroke-dasharray: 400;
-        stroke-dashoffset: 400; // Começa fora do elemento
+        stroke-dasharray: 0 400; // Inicia sem desenhar nada
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 400 0; // Desenha completamente
+        stroke-dashoffset: 0;
     }
     100% {
-        stroke-dasharray: 400;
-        stroke-dashoffset: 0; // Desenha o elemento
+        stroke-dasharray: 0 400; // Apaga completamente
+        stroke-dashoffset: 0;
     }
 }
 
@@ -261,12 +267,11 @@
         stroke-width: 1.8px;
         stroke-dasharray: 400; 
         stroke-dashoffset: 400;
-        animation: drawDiamond 5s ease infinite;
-        animation-delay: 40s; // A cada 10 segundos, o diamante será redesenhado
-    }
-
-    .diamond.top {
+        animation: drawDiamond 15s ease infinite; // 60 segundos para desenhar e 60 para apagar
+        animation-direction: alternate; // Faz a animação ir e voltar
+        animation-delay: 2s; // Delay inicial de 2 segundos
         transform: rotate(45deg) translateY(-105px) translateX(-50px); // Aproximar do quadrado
-        animation-delay: 2s;
     }
 }
+
+//RESPONSIVIDADE
