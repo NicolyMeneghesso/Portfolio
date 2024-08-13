@@ -215,13 +215,13 @@
     .shape-container {
 
         .square {
-            stroke: rgba(48, 50, 53, 0.8);
+            stroke: rgba(48, 50, 53, 0.52);
             animation: drawSquareLight 6s ease forwards;
             animation-fill-mode: forwards; // Mantém o estado final da animação
         }
 
         .diamond {
-            stroke: rgba(48, 50, 53, 0.8);
+            stroke: rgba(48, 50, 53, 0.52);
             animation: drawDiamond 15s ease infinite; // 60 segundos para desenhar e 60 para apagar
             animation-direction: alternate; // Faz a animação ir e voltar
             animation-delay: 2s; // Delay inicial de 2 segundos
@@ -259,13 +259,13 @@
 .shape-container {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translateX(100%);
+    transform: translateY(-50%) translateX(112%);
 
     .square {
         width: 245px;
         height: 245px;
         fill: transparent;
-        stroke: rgba(169, 142, 177, 0.755);
+        stroke: rgba(169, 142, 177, 0.555);
         stroke-width: 1.8px;
         animation: drawSquare 6s ease forwards;
         animation-fill-mode: forwards; // Mantém o estado final da animação
@@ -275,7 +275,7 @@
         width: 120px;
         height: 120px;
         fill: transparent;
-        stroke: rgba(169, 142, 177, 0.755);
+        stroke: rgba(169, 142, 177, 0.555);
         stroke-width: 1.8px;
         stroke-dasharray: 400; 
         stroke-dashoffset: 400;
@@ -286,4 +286,102 @@
     }
 }
 
+
 //RESPONSIVIDADE
+
+@media (min-width: 851px) and (max-width: 991px) { 
+    .vscode-card {
+        width: 30%;
+        top: 40%; 
+        left: 5%; 
+    }
+
+    .card-body-main {
+        margin-left: 0; 
+        text-align: center; 
+    }
+
+    .title-main {
+        font-size: 1.4em; 
+    }
+
+    .text-main {
+        font-size: 3.4em; 
+    }
+
+    .d-grid {
+        justify-content: center; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 850px) { 
+    .vscode-card {
+        display: none; 
+    }
+
+    .shape-container {
+        display: none;
+    }
+
+    .text-main {
+        font-size: 3.3em; 
+    }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+    .vscode-card {
+        display: none; 
+    }
+
+    .shape-container {
+        display: none;
+    }
+
+    .text-main {
+        font-size: 3.1em !important; 
+    }
+
+    .title-main {
+        font-size: 1.5em !important; 
+    }
+}
+
+@media (min-width: 440px) and (max-width: 550px) {
+    .vscode-card {
+        display: none; 
+    }
+
+    .shape-container {
+        display: none;
+    }
+
+    .text-main {
+        font-size: 2.5em !important; 
+    }
+
+    .title-main {
+        font-size: 1.4em !important; 
+    }
+}
+
+@media (max-width: 440px) {
+    .vscode-card {
+        display: none; 
+    }
+
+    .shape-container {
+        display: none;
+    }
+
+    .text-main {
+        font-size: 2em !important; 
+    }
+
+    .title-main {
+        font-size: 1.3em !important; 
+    }
+
+    .interests {
+        font-size: 1.3em !important;
+    }
+}
