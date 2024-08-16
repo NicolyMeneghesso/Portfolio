@@ -1,120 +1,23 @@
-<div class="row g-0 position-relative" id="about">
-    <div class="col-md-4" id="row-body">
-        <div class="index-left-content">
-            <div class="light-div">
-                <img src="<%= image_url 'luminaria.png' %>" alt="luminaria" class="" id="lamps">
-                <div class="light-beam" id="light-beam"></div> <!-- Adicione este elemento para o feixe de luz -->
+<div class="row row-about vh-100" id="about">
+    <div class="col d-flex justify-content-center align-items-center">
+        <div class="col col-about">
+            <div class="card-about">
+                <div class="card-about-text">
+                    <h2 class="text-title-about">Um pouco sobre mim</h2>
+                    <p class="text-about">Me formei em Engenharia Civil e comecei a me interessar por programação no último ano da faculdade. 
+                        Durante o técnico em edificações, fui apresentada de forma bem superficial ao mundo da programação por amigos do curso 
+                        técnico de TI. Na época, achava tudo muito complicado (até descobrir cálculo integral tripla na faculdade!).
+                    </p>
+                    <p class="text-about">Quando comecei a estudar HTML, CSS e JavaScript, percebi que tinha encontrado uma nova paixão 
+                        e um novo caminho para seguir. Agora, estou iniciando minha segunda graduação em Análise e Desenvolvimento de 
+                        Sistemas. Enquanto isso, estou mergulhando de cabeça nos estudos avançados de JavaScript e Ruby on Rails.
+                    </p>                
+                </div>
             </div>
 
-            <div class="shelf shelf-bottom">
-                <ul>
-                    <li class="shelf-bottom-elfo">
-                        <img src="<%= image_url 'elfo.png' %>" alt="elfo">
-                    </li>
-                    <li class="shelf-bottom-monitor">
-                        <div class="monitor-bg">
-                            <div class="screen">
-                                <div class="vscode" id="monitorScreen">
-                                    <div class="menu-left">
-                                        <i class="fas fa-file-alt" style="color: rgb(220, 242, 249);"></i> 
-                                        <i class="fas fa-search"></i> 
-                                        <i class="fas fa-code-branch"></i> 
-                                        <i class="fas fa-user"></i> 
-                                        <i class="fas fa-cog"></i> 
-                                    </div>
-
-                                    <ul class="vscode-explorer">
-                                        <li>
-                                            <i class="fas fa-angle-down"></i>
-                                            <span class="name-pasta"></span>
-                                            <span class="name-sub-pasta"></span>
-                                            <span class="name-sub-pasta"></span>
-                                            <span class="name-sub-pasta" style="margin-top: 14px;"></span>
-                                            <span class="name-sub-pasta" style="margin-top: 30px;"></span>
-
-                                        </li>  
-
-                                        <li>
-                                            <i class="fas fa-angle-down"></i>
-                                            <span class="name-pasta"></span>
-                                            <span class="name-sub-pasta"></span>
-                                            <span class="name-sub-pasta"></span>
-                                            <span class="name-sub-pasta" style="margin-top: 14px;"></span>
-                                            <span class="name-sub-pasta" style="margin-top: 30px;"></span>
-
-                                        </li>    
-
-                                        <li>
-                                            <i class="fas fa-angle-down"></i>
-                                            <span class="name-pasta"></span>
-                                            <span class="name-sub-pasta"></span>
-                                            <span class="name-sub-pasta"></span>
-                                            <span class="name-sub-pasta" style="margin-top: 14px;"></span>
-                                            <span class="name-sub-pasta" style="margin-top: 30px;"></span>
-
-                                        </li>                                              
-                                    </ul>
-
-                                    <ul class="menu-top">
-                                        <li class="html"></li>
-                                        <li class="css"></li>
-                                        <li class="js active"></li>
-                                    </ul>
-
-                                    <div class="vscode-content" id="vscodeContent">
-                                        <div class="line">
-                                            <div class="vscode-number">10</div>
-                                            <div class="vscode-text" id="line-0"></div>
-                                        </div>
-                                        <div class="line">
-                                            <div class="vscode-number">11</div>
-                                            <div class="vscode-text" id="line-1"></div>
-                                        </div>
-                                        <div class="line">
-                                            <div class="vscode-number">12</div>
-                                            <div class="vscode-text" id="line-2"></div>
-                                        </div>
-                                        <div class="line">
-                                            <div class="vscode-number">13</div>
-                                            <div class="vscode-text" id="line-3"></div>
-                                        </div>
-                                        <div class="line">
-                                            <div class="vscode-number">14</div>
-                                            <div class="vscode-text" id="line-4"></div>
-                                        </div>
-                                        <div class="line">
-                                            <div class="vscode-number">15</div>
-                                        </div>  
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="base"></div>
-                            <div class="base-foot"></div>
-                        </div>    
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="col col-about">
-        <div class="card-about">
-            <div class="card-about-text">
-                <h2 class="text-title-about">Civil Engineer | Aspiring Programmer</h2>
-                <p class="text-about">Me formei em Engenharia Civil e comecei a me interessar por programação no último ano da faculdade. 
-                    Durante o técnico em edificações, fui apresentada de forma bem superficial ao mundo da programação por amigos do curso 
-                    técnico de TI. Na época, achava tudo muito complicado (até descobrir cálculo integral tripla na faculdade!).
-                </p>
-                <p class="text-about">Quando comecei a estudar HTML, CSS e JavaScript, percebi que tinha encontrado uma nova paixão 
-                    e um novo caminho para seguir. Agora, estou iniciando minha segunda graduação em Análise e Desenvolvimento de 
-                    Sistemas. Enquanto isso, estou mergulhando de cabeça nos estudos avançados de JavaScript e Ruby on Rails.
-                </p>                
-            </div>
-        </div>
-
-        <div class="card-about-img">             
-            <img class="img-girl" src="<%= image_url 'img-girl.png' %>" alt="me">
+            <!--<div class="img-about" >
+                <%= image_tag 'xx.png', alt: 'Logo' %>
+            </div> -->
         </div>
     </div>
 </div>
