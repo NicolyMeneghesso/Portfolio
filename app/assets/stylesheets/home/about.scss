@@ -1,55 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-.row-about {
-    background: linear-gradient(180deg, rgb(2, 6, 23) 0%, rgb(2, 6, 23) 40%, rgb(36, 2, 63) 65%, rgb(56, 5, 104) 100%);
+#about {
+    background: rgb(2, 6, 23);
 }
 
-.col-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    .card-about {
-        background-color: rgb(33, 37, 41);
-        box-shadow: 10px 8px rgba(0, 0, 0, 0.1);
-        width: 60%;
-        border-radius: 10px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 18px;
-        
-        .card-about-text {
-            width: 100%;
-            overflow-y: auto;
-            max-height: 70vh;
+.card-about {
+    background-color: rgb(33, 37, 41);
+    border-radius: 10px;
+    width: 80%; 
+    height: auto;
+    padding: 20px;
+    margin-left: 5%;
+    position: relative;
 
-            .text-title-about {
-                color: rgb(240, 255, 255);
-                font: 22px 'Mulish';
-                margin-top: 15px;
-                text-align: center;
-                padding-bottom: 2px;
-            }
+    .text-title-about {
+        color: rgb(240, 255, 255);
+        font-family: 'Mulish', sans-serif;
+        margin-top: 15px;
+        text-align: center;
+        padding-bottom: 2px;
+    }
 
-            .text-about {
-                color: rgb(240, 255, 255);
-                font: 17px 'Montserrat';
-                margin-top: 10px;
-                padding: 5px;
-                overflow-wrap: break-word; 
-                text-align: justify;
-            }
-        }
+    .text-about {
+        color: rgb(240, 255, 255);
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 10px;
+        padding: 5px;
+        overflow-wrap: break-word; 
+        text-align: justify;
     }
 }
 
 .light-mode {
-    .row-about {
-        background: linear-gradient(185deg, rgb(184, 135, 167) 0%, rgb(184, 135, 167) 35%, rgb(184, 135, 167) 55%, rgb(235, 188, 219) 70%, rgb(238, 192, 222) 100%);
+    #about {
+        background: rgb(184, 135, 167);
+    }
+
+    .card-about {
+        background-color: rgb(156, 97, 151);
     }
 }
+
+.img-about {
+    max-width: 100%; 
+    height: auto; 
+
+    img {
+        max-width: 60%;
+        height: auto; 
+        margin: 0 auto; 
+        display: block; 
+        border-radius: 4%;
+        margin-left: 5%;
+        box-shadow: 3px 10px rgb(255, 154, 220);
+    }
+}
+
+
 // Media queries para responsividade 
 
 @media only screen and (min-width: 900px) {

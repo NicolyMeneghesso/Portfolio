@@ -5,7 +5,7 @@ body, html {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0;
-    background: linear-gradient(185deg, rgb(2, 6, 23), rgba(2, 6, 23, 0.951));
+    background: linear-gradient(185deg, rgb(2, 6, 23), rgb(2, 6, 23));
 
     /* Personalização da barra de rolagem */   
      &::-webkit-scrollbar {
@@ -27,7 +27,7 @@ body, html {
 }
 
 .body-sun {
-    background: rgb(201, 151, 192);
+    background: rgb(184, 135, 167);
 
     &::-webkit-scrollbar {
         width: 12px; /* Largura da barra de rolagem */

@@ -17,7 +17,7 @@ $color-background-light: rgb(139, 155, 178);
     }
 }
 
-.moon-icon {
+#moon-icon {
     display: none;
     font-size: 28px;
     cursor: pointer;
@@ -152,7 +152,7 @@ $color-background-light: rgb(139, 155, 178);
 
 
 @media (max-width: 991.5px) {
-    .moon-icon {
+    #moon-icon {
         display: block;
         margin-right: 0;
         margin-left: auto;
