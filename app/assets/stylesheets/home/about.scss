@@ -30,6 +30,30 @@
         overflow-wrap: break-word; 
         text-align: justify;
     }
+
+    ::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        border-top: 7px solid rgb(218, 112, 214);
+        border-left: 7px solid rgb(218, 112, 214);
+        height: 15rem;
+        width: 15rem;
+    }
+
+    
+    ::before {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        right: -30px;
+        border-top: 7px solid rgb(218, 112, 214);
+        border-left: 7px solid rgb(218, 112, 214);
+        rotate: 180deg;
+        height: 15rem;
+        width: 15rem;
+    }   
 }
 
 .light-mode {
@@ -39,12 +63,18 @@
 
     .card-about {
         background-color: rgb(156, 97, 151);
+
+        ::after, ::before {
+            border-top: 7px solid rgb(39, 44, 49);
+            border-left: 7px solid rgb(33, 44, 49);
+        }
     }
 }
 
 .img-about {
     max-width: 100%; 
     height: auto; 
+    position: relative;
 
     img {
         max-width: 60%;
@@ -53,25 +83,19 @@
         display: block; 
         border-radius: 4%;
         margin-left: 5%;
-        box-shadow: 3px 10px rgb(255, 154, 220);
     }
 }
-
 
 // Media queries para responsividade 
 
-@media only screen and (min-width: 900px) {
-    .text-title-about {
-        width: 100%;
-        text-align: center;
-    }
-
-    .text-about {
-        width: 100%;
+@media only screen and (min-width: 901px) and (max-width: 991px) {
+    img {
+       display: none !important;
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 900px) {
+
+@media only screen and (min-width: 500px) and (max-width: 901px) {
     .card-about {
         width: 90% !important;
     }
@@ -86,24 +110,34 @@
         font-size: 0.9em;
         width: 100%;
     }
+
+    img {
+        display: none !important;
+    }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .card-about {
         width: 80% !important;
         align-items: center;
+        overflow: hidden;      
     }
 
     .text-title-about {
-        font-size: 0.9em;
+        font-size: 1em;
         width: 100%;
         text-align: center;
     }
 
     .text-about {
-        //display: none;
-        font-size: 0.09em;
+        font-size: 0.08em;
         text-align: left !important;
+        overflow-y: auto;
+        max-height: 14rem;
+    }
+
+    img {
+        display: none !important;
     }
 }
 
