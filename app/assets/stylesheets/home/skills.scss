@@ -29,6 +29,12 @@
     justify-content: center;
     background-color: rgb(33, 37, 41);
     border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out; 
+
+    &:hover {
+        box-shadow: 0 0 5px rgb(218, 112, 214), 0 0 5px rgb(218, 112, 214), 
+                    0 0 10px rgb(218, 112, 214), 0 0 20px rgb(218, 112, 214);
+    }
 }
 
 .img-skills {
@@ -49,4 +55,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.light-mode {
+    .title-skills {
+        color: rgb(39, 44, 49);
+    }
+
+    .card-img-skills {
+        background-color: rgb(156, 97, 151);
+
+        &:hover {
+            box-shadow: 0 0 5px rgb(100, 30, 105), 0 0 10px rgb(100, 30, 105), 
+                        0 0 10px rgb(100, 30, 105), 0 0 20px rgb(100, 30, 105);
+        }
+    }
+
+    .card-simbol {
+        color: transparent;
+        -webkit-text-stroke: 0.8px rgb(31, 32, 35);
+    }
 }

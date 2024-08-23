@@ -95,7 +95,7 @@
         
     <div class="col-md-9 d-flex flex-column align-items-center">
         <h1 class="title-skills">Linguagens e Tecnologias</h1>
-        <div class="row row-cols-1 row-cols-md-5 g-5">
+        <div class="row row-cols-1 row-cols-md-4 g-5">
             <% @skills.each do |skill| %>
                 <%= render partial: 'home/skills_card', locals: { skill: skill } %>
             <% end %>
