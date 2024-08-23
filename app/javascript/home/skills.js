@@ -1,32 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() { 
-    let img = document.getElementById('lamps')
-    let cardAbout = document.getElementById('card-about')
-    let lightBeam = document.getElementById('light-beam')
-
-    // Mostrar o feixe de luz quando a página for carregada
-    lightBeam.classList.add('light-beam');
-
-    img.addEventListener('click', function() {
-        lightBeam.classList.toggle('transparent')
-
-        lightBeam.addEventListener('click', toggleThreme)
-    })
-
     
     //código para interação do monitor
     const codeSnippet = [
         "function helloWorld() {",
-        "  document.getElementById('hello-world').textContent =",
-        "    'Hello, World!'",
+        "  const message = 'Hello World'",
+        "  console.log(message)",
         "}",
         "helloWorld();"
     ];
 
     let currentLine = 0 
     let currentChar = 0 
-    const pauseBeforeDelete = 10500 //A pausa antes de começar a excluir o texto
-    const deleteSpeed = 250 //A velocidade de exclusão
-    const pauseBeforeRestart = 2000 //A pausa antes de reiniciar o ciclo de digitação
+    const typingSpeed = 150; // Velocidade de digitação
+    const linePause = 600; // Pausa entre as linhas digitadas
+    const pauseBeforeDelete = 3000; // Pausa antes de começar a excluir o texto
+    const deleteSpeed = 100; // Velocidade de exclusão
+    const pauseBeforeRestart = 2000; // Pausa antes de reiniciar o ciclo de digitação
 
     function typeCode() {
         // Verifica se ainda há linhas do codeSnippet para digitar
@@ -36,11 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const lineTextElement = document.getElementById(`line-${currentLine}`)
                 lineTextElement.textContent += codeSnippet[currentLine][currentChar]
                 currentChar++;
-                setTimeout(typeCode, 100) // Chama a função de digitação novamente
+                setTimeout(typeCode, typingSpeed) // Chama a função de digitação novamente
             } else {
                 currentLine++;
                 currentChar = 0;
-                setTimeout(typeCode, 500) // Pequena pausa entre as linhas
+                setTimeout(typeCode, linePause) // Pequena pausa entre as linhas
             }
         } else {
             setTimeout(deleteCode, pauseBeforeDelete) // Inicia a exclusão após a pausa
