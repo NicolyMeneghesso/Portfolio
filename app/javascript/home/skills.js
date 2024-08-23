@@ -49,10 +49,23 @@ document.addEventListener('DOMContentLoaded', function() {
                     currentChar = codeSnippet[currentLine].length;
                     setTimeout(deleteCode, deleteSpeed);
                 } else {
-                    setTimeout(typeCode, pauseBeforeRestart); // Reinicia o ciclo após a exclusão completa
+                    resetTyping(); // Reinicia o ciclo após a exclusão completa
                 }
             }
         }
+    }
+
+    function resetTyping() {
+        // Redefine as variáveis para reiniciar o ciclo de digitação
+        currentLine = 0;
+        currentChar = 0;
+
+        // Limpa o conteúdo das linhas para começar novamente
+        for (let i = 0; i < codeSnippet.length; i++) {
+            document.getElementById(`line-${i}`).textContent = '';
+        }
+
+        setTimeout(typeCode, pauseBeforeRestart);
     }
     
     typeCode();

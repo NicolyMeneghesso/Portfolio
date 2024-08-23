@@ -1,5 +1,10 @@
 <div class="row vh-100" id="skills">
     <div class="col-md-3">
+        <div class="position-relative">
+            <div class="card-simbol">
+                &#60; &#8260; &#62;
+            </div>
+        </div>
         <div class="shelf shelf-bottom">
             <ul>
                 <li class="shelf-bottom-monitor">
@@ -89,16 +94,11 @@
     </div>
         
     <div class="col-md-9 d-flex flex-column align-items-center">
-        <h1 class="title-skills mb-4">Habilidades</h1>
-        <div class="d-flex justify-content-center">
-            <div class="card mx-2" style="width: 8rem;">
-                <%= image_tag 'logo-html.png', alt: 'Logo-html', class: 'card-img-top' %>
-                <div class="card-body">
-                    <p class="card-text">HTML</p>
-                </div>
-            </div>
+        <h1 class="title-skills">Linguagens e Tecnologias</h1>
+        <div class="row row-cols-1 row-cols-md-5 g-5">
+            <% @skills.each do |skill| %>
+                <%= render partial: 'home/skills_card', locals: { skill: skill } %>
+            <% end %>
         </div>
     </div>
-</div>
-
 </div>
