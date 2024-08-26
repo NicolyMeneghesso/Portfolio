@@ -1,8 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
         <div class="navbar-brand">
-            <div class="nav-text-2" id="nav-text-2">
-                <p>&#60;</p><p>n</p><p>.</p><p>m</p><p>e</p><p>n</p><p>e</p><p>g</p><p>h</p><p>e</p><p>s</p><p>s</p><p>o</p><p>&nbsp;/</p><p>&#62;</p>
+            <div class="nav-text-2 slide-in-left" id="nav-text-2">
+                <% text = "<n.meneghesso />" %>
+                <% text.each_char do |char| %>
+                <p><%= char %></p>
+                <% end %>
             </div>
         </div>
 
@@ -10,7 +13,7 @@
             &#9790; 
         </span>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        <button class="navbar-toggler slide-in-left" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,24 +21,27 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item">
-                    <div class="nav-text">
-                       <p>&#60;</p><p>n</p><p>.</p><p>m</p><p>e</p><p>n</p><p>e</p><p>g</p><p>h</p><p>e</p><p>s</p><p>s</p><p>o</p><p>&nbsp;/</p><p>&#62;</p>
+                    <div class="nav-text slide-in-left">
+                        <% text = "<n.meneghesso />" %>
+                        <% text.each_char do |char| %>
+                        <p><%= char %></p>
+                        <% end %>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item slide-in-left">
                     <a class="nav-link" aria-current="page" href="#home">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item slide-in-left">
                     <a class="nav-link" href="#about">Sobre</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item slide-in-left">
                     <a class="nav-link" href="#skills">Habilidades</a>
                 </li>
-                <li class="nav-item ">
+                <li class="nav-item slide-in-left">
                     <a class="nav-link" href="#projects">Projetos</a>
                 </li>
             </ul>
-            <form class="d-flex align-items-center" style="width: 10%; padding-left: 1%" role="search">
+            <form class="d-flex align-items-center slide-in-left" style="width: 10%; padding-left: 1%" role="search">
                 <label class="custom-toggle btn-outline-success me-2" id="day">
                     <input type="checkbox">
                     <div class="slider"></div>
