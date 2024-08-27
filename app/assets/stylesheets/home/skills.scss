@@ -15,7 +15,7 @@
     font-family: 'Mulish';
     font-weight: 600;
     font-size: 2.8em;
-    margin-right: 30%;
+    margin-right: 32%;
     margin-bottom: 5%;
     margin-top: 2%;
 }
@@ -74,5 +74,36 @@
     .card-simbol {
         color: transparent;
         -webkit-text-stroke: 0.8px rgb(31, 32, 35);
+    }
+}
+
+//Resposividade
+
+@media only screen and (min-width: 901px) and (max-width: 994px) {
+    .card-simbol {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 901px) {
+    .card-simbol {
+        display: none !important;
+    }
+
+    .title-skills {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .card-simbol {
+        display: none !important;
+    }
+
+    .title-skills {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-right: 0;
     }
 }

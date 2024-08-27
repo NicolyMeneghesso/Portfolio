@@ -8,6 +8,7 @@
     background-color: rgb(33, 37, 41);
     border-radius: 10px;
     width: 80%; 
+    max-width: 90%;
     height: auto;
     padding: 20px;
     margin-left: 5%;
@@ -16,14 +17,14 @@
     .text-title-about {
         color: rgb(240, 255, 255);
         font-family: 'Mulish', sans-serif;
-        margin-top: 15px;
+        margin-top: 10px;
         text-align: center;
         padding-bottom: 2px;
     }
 
     .text-about {
         color: rgb(240, 255, 255);
-        font-size: 17px;
+        font-size: 1.1em;
         font-family: 'Montserrat', sans-serif;
         margin-top: 10px;
         padding: 5px;
@@ -88,16 +89,30 @@
 
 // Media queries para responsividade 
 
-@media only screen and (min-width: 901px) and (max-width: 991px) {
-    img {
+@media only screen and (min-width: 901px) and (max-width: 994px) {
+    .img-about {
        display: none !important;
     }
 }
 
-
 @media only screen and (min-width: 500px) and (max-width: 901px) {
     .card-about {
-        width: 90% !important;
+        height: 90% !important; 
+    }
+
+    .text-about {
+        overflow-y: auto;
+        max-height: 28rem;
+    }
+
+    .img-about {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .card-about {
+        height: 90% !important; 
     }
 
     .text-title-about {
@@ -107,36 +122,13 @@
     }
 
     .text-about {
-        font-size: 0.9em;
-        width: 100%;
-    }
-
-    img {
-        display: none !important;
-    }
-}
-
-@media only screen and (min-width: 300px) and (max-width: 500px) {
-    .card-about {
-        width: 80% !important;
-        align-items: center;
-        overflow: hidden;      
-    }
-
-    .text-title-about {
-        font-size: 1em;
-        width: 100%;
-        text-align: center;
-    }
-
-    .text-about {
-        font-size: 0.08em;
+        font-size: 0.07em;
         text-align: left !important;
         overflow-y: auto;
-        max-height: 14rem;
+        max-height: 28rem;
     }
 
-    img {
+    .img-about {
         display: none !important;
     }
 }

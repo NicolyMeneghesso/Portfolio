@@ -206,8 +206,12 @@ $light-gray: rgb(201, 203, 204);
 
 // Responsividade
 
-@media (max-width: 800px) {
-    .index-left-content {
+@media (max-width: 1000px) {
+    .shelf-bottom {
+        display: none;
+    }
+
+    .shelf-bottom-monitor {
         display: none;
     }
 }
