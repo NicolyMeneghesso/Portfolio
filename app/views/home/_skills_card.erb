@@ -1,8 +1,10 @@
-<div class="col">
-    <div class="card-img-skills p-3 h-100 d-flex flex-column align-items-center">
+<div class="col col-skills">
+    <div class="card-img-skills p-2 h-100 d-flex flex-column align-items-center mx-auto">
         <%= image_tag skill[:image], alt: skill[:alt], class: 'img-skills' %>
         <div class="card-body p-1">
             <p class="card-text-skills"><%= skill[:name] %></p>
         </div>
     </div>
 </div>
+
+<!--PARA ADD MAIS IMGS SEMPRE IR NO CONTROLLER DO RAILS -> HOME_CONTROLLER -->
