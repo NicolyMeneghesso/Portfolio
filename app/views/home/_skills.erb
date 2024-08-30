@@ -1,5 +1,5 @@
 <div class="row vh-100" id="skills">
-    <div class="col-md-3 d-none d-lg-block">
+    <div class="col-lg-3 d-none d-lg-block">
         <div class="position-relative">
             <div class="card-simbol">
                 &#60; &#8260; &#62;
@@ -93,9 +93,9 @@
         </div>
     </div>
         
-    <div class="col-md-9 d-flex flex-column align-items-center mx-auto">
+    <div class="col-md-9 mx-auto">
         <h1 class="title-skills slide-in-left">Linguagens e Tecnologias</h1>
-        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4 slide-in-left">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 gx-2 gy-4 slide-in-left">
             <% @skills.each do |skill| %>
                 <%= render partial: 'home/skills_card', locals: { skill: skill } %>
             <% end %>
