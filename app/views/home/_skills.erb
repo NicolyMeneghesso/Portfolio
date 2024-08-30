@@ -1,5 +1,5 @@
 <div class="row vh-100" id="skills">
-    <div class="col-lg-3 d-none d-lg-block">
+    <div class="col-md-3 mb-3">
         <div class="position-relative">
             <div class="card-simbol">
                 &#60; &#8260; &#62;
@@ -20,35 +20,24 @@
                                 </div>
 
                                 <ul class="vscode-explorer">
+                                    <!-- Estrutura simplificada para a listagem de arquivos -->
+                                    <% 3.times do %>
                                     <li>
                                         <i class="fas fa-angle-down"></i>
                                         <span class="name-pasta"></span>
-                                        <span class="name-sub-pasta"></span>
-                                        <span class="name-sub-pasta"></span>
-                                        <span class="name-sub-pasta" style="margin-top: 14px;"></span>
-                                        <span class="name-sub-pasta" style="margin-top: 30px;"></span>
+                                        <% 6.times do %>
+                                            <span class="name-sub-pasta"></span>
+                                        <% end %>
 
+                                        <% 6.times do %>
+                                            <span class="name-sub-pasta" style="margin-top: 14px;"></span>
+                                        <% end %>
+
+                                        <% 6.times do %>
+                                            <span class="name-sub-pasta" style="margin-top: 30px;"></span>
+                                        <% end %>
                                     </li>  
-
-                                    <li>
-                                        <i class="fas fa-angle-down"></i>
-                                        <span class="name-pasta"></span>
-                                        <span class="name-sub-pasta"></span>
-                                        <span class="name-sub-pasta"></span>
-                                        <span class="name-sub-pasta" style="margin-top: 14px;"></span>
-                                        <span class="name-sub-pasta" style="margin-top: 30px;"></span>
-
-                                    </li>    
-
-                                    <li>
-                                        <i class="fas fa-angle-down"></i>
-                                        <span class="name-pasta"></span>
-                                        <span class="name-sub-pasta"></span>
-                                        <span class="name-sub-pasta"></span>
-                                        <span class="name-sub-pasta" style="margin-top: 14px;"></span>
-                                        <span class="name-sub-pasta" style="margin-top: 30px;"></span>
-
-                                    </li>                                              
+                                    <% end %>                                              
                                 </ul>
 
                                 <ul class="menu-top">
@@ -58,29 +47,12 @@
                                 </ul>
 
                                 <div class="vscode-content" id="vscodeContent">
+                                    <% 6.times do |i| %>
                                     <div class="line">
-                                        <div class="vscode-number">10</div>
-                                        <div class="vscode-text" id="line-0"></div>
+                                        <div class="vscode-number"><%= i + 10 %></div>
+                                        <div class="vscode-text" id="line-<%= i %>"></div>
                                     </div>
-                                    <div class="line">
-                                        <div class="vscode-number">11</div>
-                                        <div class="vscode-text" id="line-1"></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="vscode-number">12</div>
-                                        <div class="vscode-text" id="line-2"></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="vscode-number">13</div>
-                                        <div class="vscode-text" id="line-3"></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="vscode-number">14</div>
-                                        <div class="vscode-text" id="line-4"></div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="vscode-number">15</div>
-                                    </div>  
+                                    <% end %>
                                 </div>
 
                             </div>
@@ -93,7 +65,7 @@
         </div>
     </div>
         
-    <div class="col-md-9 mx-auto">
+    <div class="col-md-9">
         <h1 class="title-skills slide-in-left">Linguagens e Tecnologias</h1>
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 gx-2 gy-4 slide-in-left">
             <% @skills.each do |skill| %>
