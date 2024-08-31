@@ -1,0 +1,58 @@
+<div class="shelf shelf-bottom slide-in-left">
+    <ul>
+        <li class="shelf-bottom-monitor">
+            <div class="monitor-bg">
+                <div class="screen">
+                    <div class="vscode" id="monitorScreen">
+                        <div class="menu-left">
+                            <i class="fas fa-file-alt" style="color: rgb(220, 242, 249);"></i> 
+                            <i class="fas fa-search"></i> 
+                            <i class="fas fa-code-branch"></i> 
+                            <i class="fas fa-user"></i> 
+                            <i class="fas fa-cog"></i> 
+                        </div>
+
+                        <ul class="vscode-explorer">
+                            <!-- Estrutura simplificada para a listagem de arquivos -->
+                            <% 3.times do %>
+                            <li>
+                                <i class="fas fa-angle-down"></i>
+                                <span class="name-pasta"></span>
+                                <% 6.times do %>
+                                    <span class="name-sub-pasta"></span>
+                                <% end %>
+
+                                <% 6.times do %>
+                                    <span class="name-sub-pasta" style="margin-top: 14px;"></span>
+                                <% end %>
+
+                                <% 6.times do %>
+                                    <span class="name-sub-pasta" style="margin-top: 30px;"></span>
+                                <% end %>
+                            </li>  
+                            <% end %>                                              
+                        </ul>
+
+                        <ul class="menu-top">
+                            <li class="html"></li>
+                            <li class="css"></li>
+                            <li class="js active"></li>
+                        </ul>
+
+                        <div class="vscode-content" id="vscodeContent">
+                            <% 6.times do |i| %>
+                            <div class="line">
+                                <div class="vscode-number"><%= i + 10 %></div>
+                                <div class="vscode-text" id="line-<%= i %>"></div>
+                            </div>
+                            <% end %>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="base"></div>
+                <div class="base-foot"></div>
+            </div>    
+        </li>
+    </ul>
+</div>
