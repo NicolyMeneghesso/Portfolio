@@ -1,25 +1,23 @@
+.title-skills {
+    color: rgb(218, 112, 214);
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 2.8em;
+    width: max-content;
+    margin: 0 auto; 
+}
+
 .card-simbol {
     font-weight: 700;
     font-size: 5em;
     color: transparent;
     -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.692);
     position: absolute;
-    top: 110px;
-    left: 40%;
+    top: 10px;
+    left: 35%;
+    transform: translateX(-35%);
     background: transparent;
     animation: float 3s ease-in-out infinite;
-}
-
-.title-skills {
-    color: rgb(218, 112, 214);
-    font-family: 'Mulish';
-    font-weight: 600;
-    font-size: 2.8em;
-    position: absolute;
-    left: 50%;
-    z-index: 10; 
-    transform: translateX(-50%);
-    width: max-content;    
 }
 
 .card-img-skills {
@@ -53,6 +51,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.row-skills {
+    margin: 10px 0 0 100px;
+    width: 100%;
 }
 
 .light-mode {
@@ -99,18 +102,16 @@
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     .card-simbol {
         display: none !important;
     }
 
     .title-skills {
         font-size: 2.5rem;
-        text-align: center;
-        margin-right: 0 !important;
     }
 
     .card-img-skills {
-        width: 9em;
+        width: 7em;
     }
 }
