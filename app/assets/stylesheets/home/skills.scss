@@ -1,3 +1,10 @@
+#skills {
+    margin-bottom: 3%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .title-skills {
     color: rgb(218, 112, 214);
     font-family: 'Mulish';
@@ -53,11 +60,6 @@
     justify-content: center;
 }
 
-.row-skills {
-    margin: 10px 0 0 50px !important;
-    width: 100%;
-}
-
 .light-mode {
     .title-skills {
         color: rgb(39, 44, 49);
@@ -80,61 +82,30 @@
 
 //Resposividade
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) and (max-width: 1225px) {
     .card-simbol {
-        top: 30px;
-        left: 20%;
-        transform: translateX(-20%);
-    }
-
-    .title-skills {
-        top: 30px; 
-        padding-bottom: 15px;
-        margin-top: 0; 
-        position: relative; 
-    }
-
-    .vh-100 {
-        overflow: hidden; 
+        left: 10%;
+        transform: translateX(-10%);
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 994px) {
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
     .card-simbol {
         display: none !important;
     }
 
-    .title-skills {
-        margin: 0 auto;
-    }
-
-    .row-skills {
-        margin: 0 auto !important;
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 400px) and (max-width: 767.5px) {
-    .card-simbol {
+    .monitor-skills {
         display: none !important;
     }
 
-    .title-skills {
-        text-align: center;
-        margin: 0 auto;
-        width: 90%;
+    .row-skills {
+        align-items: justify;
     }
 
-    .row-skills {
-        margin: 0 auto !important;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
 }
 
 
-@media only screen and (max-width: 399px) {
+@media only screen and (min-width: 300px) and (max-width: 700px) {
     .card-simbol {
         display: none !important;
     }
@@ -146,12 +117,8 @@
         width: 90%;
     }
 
-    .card-img-skills {
-        width: 8em;
-    }
-
-    .row-skills {
-        margin: 0 auto !important;
-        width: 88%;
+    .monitor-skills {
+        display: none !important;
+        width: 0;
     }
 }

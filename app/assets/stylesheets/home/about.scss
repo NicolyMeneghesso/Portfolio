@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-
 #about {
     background: rgb(2, 6, 23);
+    margin-bottom: 3%;
+}
+
+.title-about {
+    color: rgb(218, 112, 214);
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 2.8em;
+    margin: 0 14%; 
 }
 
 .card-about {
@@ -13,14 +20,6 @@
     padding: 20px;
     margin-left: 5%;
     position: relative;
-
-    .text-title-about {
-        color: rgb(240, 255, 255);
-        font-family: 'Mulish', sans-serif;
-        margin-top: 10px;
-        text-align: center;
-        padding-bottom: 2px;
-    }
 
     .text-about {
         color: rgb(240, 255, 255);
@@ -36,9 +35,10 @@
         content: "";
         position: absolute;
         top: -30px;
-        left: -30px;
+        right: -30px;
         border-top: 7px solid rgb(218, 112, 214);
         border-left: 7px solid rgb(218, 112, 214);
+        rotate: 90deg;
         height: 15rem;
         width: 15rem;
     }
@@ -48,10 +48,10 @@
         content: "";
         position: absolute;
         bottom: -30px;
-        right: -30px;
+        left: -30px;
         border-top: 7px solid rgb(218, 112, 214);
         border-left: 7px solid rgb(218, 112, 214);
-        rotate: 180deg;
+        rotate: 270deg;
         height: 15rem;
         width: 15rem;
     }   
@@ -60,6 +60,10 @@
 .light-mode {
     #about {
         background: rgb(184, 135, 167);
+    }
+
+    .title-about {
+        color: rgb(39, 44, 49);
     }
 
     .card-about {
@@ -89,15 +93,22 @@
 
 // Media queries para responsividade 
 
-@media only screen and (min-width: 901px) and (max-width: 994px) {
-    .img-about {
-       display: none !important;
+@media only screen and (min-width: 992px) and (max-width: 1410px) {
+    .title-about {
+        margin: 0 14%; 
+        padding-right: 28%;
+        word-break: break-word; 
+        width: 60%;
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 901px) {
-    .card-about {
-        height: 90% !important; 
+@media only screen and (min-width: 500px) and (max-width: 991.5px) {
+    .title-about {
+        margin: 0 2% 0 3%; 
+        padding-right: 3%;
+        word-break: break-word; 
+        font-size: 2.4em;
+        width: 60%;
     }
 
     .text-about {
@@ -112,12 +123,13 @@
 
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .card-about {
-        height: 90% !important; 
+        ::after, ::before {
+            display: none;
+        }
     }
 
-    .text-title-about {
-        font-size: 1.2em;
-        width: 100%;
+    .title-about {
+        font-size: 2em;
         text-align: center;
     }
 
