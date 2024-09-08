@@ -62,6 +62,11 @@
         background: rgb(184, 135, 167);
     }
 
+    .img-about-2  {
+        box-shadow: 0 0 3px rgb(100, 30, 105), 0 0 7px rgb(100, 30, 105), 
+        0 0 7px rgb(100, 30, 105), 0 0 17px rgb(100, 30, 105);
+    }
+
     .title-about {
         color: rgb(39, 44, 49);
     }
@@ -81,7 +86,7 @@
     height: auto; 
     position: relative;
 
-    img {
+    .img-about-2 {
         max-width: 60%;
         height: auto; 
         margin: 0 auto; 
