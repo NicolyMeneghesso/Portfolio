@@ -1,6 +1,6 @@
-# Portfolio
+# Portfólio
 
-O objetivo principal deste portfólio é apresentar minhas competências como desenvolvedor web, destacando a capacidade de construir aplicações completas e funcionais. Também visa servir como uma plataforma para o aprendizado contínuo e experimentação com novas tecnologias.
+Este portfólio foi desenvolvido com o propósito de destacar minhas habilidades como desenvolvedora, demonstrando minha capacidade de criar aplicações completas, funcionais e bem estruturadas. Além de ser uma vitrine para meus projetos, ele serve também como uma plataforma de aprendizado contínuo, onde posso experimentar novas tecnologias, frameworks e linguagens de programação, aprimorando minhas competências enquanto exploro inovações no campo da tecnologia.
 
 # Tecnologias Utilizadas
 
