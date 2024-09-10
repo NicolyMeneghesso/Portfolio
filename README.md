@@ -1,6 +1,12 @@
 # Portfólio
 
-Este portfólio foi desenvolvido com o propósito de destacar minhas habilidades como desenvolvedora, demonstrando minha capacidade de criar aplicações completas, funcionais e bem estruturadas. Além de ser uma vitrine para meus projetos, ele serve também como uma plataforma de aprendizado contínuo, onde posso experimentar novas tecnologias, frameworks e linguagens de programação, aprimorando minhas competências enquanto exploro inovações no campo da tecnologia.
+Este portfólio foi desenvolvido para destacar minhas habilidades como desenvolvedora, mostrando minha capacidade de criar aplicações completas, funcionais e bem estruturadas. Ele serve não só como uma vitrine dos meus projetos, mas também como uma plataforma de aprendizado contínuo, onde exploro novas tecnologias, frameworks e linguagens de programação. O projeto é uma oportunidade para aprimorar minhas competências enquanto experimento e implemento inovações no campo da tecnologia.
+
+# Estrutura do Portfólio e Funcionalidades
+
+* Linguagens e Tecnologias: Apresenta as principais ferramentas e tecnologias que domino, com exemplos práticos e demonstrações das minhas habilidades técnicas.
+* Projetos: Exibe uma visão detalhada de cada projeto, com links e descrições para facilitar a navegação e o entendimento.
+* Layout Responsivo: O design foi projetado para ser adaptável a diferentes dispositivos, garantindo uma experiência consistente em desktops, tablets e smartphones.
 
 # Tecnologias Utilizadas
 
@@ -9,8 +15,3 @@ Este portfólio foi desenvolvido com o propósito de destacar minhas habilidades
 * CSS3
 * JavaScript
 
-# Funcionalidades
-
-* Apresentação de Projetos: Uma seção dedicada a exibir meus projetos com detalhes, links e descrições.
-* Sobre Mim: Informações pessoais e profissionais, destacando minha trajetória e habilidades.
-* Layout Responsivo: Design adaptável a diferentes dispositivos, proporcionando uma experiência consistente em desktops, tablets e smartphones.
