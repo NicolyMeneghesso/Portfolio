@@ -137,6 +137,22 @@ html {
     }
 }
 
+.light-mode {
+    .footer {
+        background: rgb(184, 135, 167);
+        color: rgb(4, 4, 4);
+
+        .heart {
+            background-color: rgb(0, 0, 0);
+
+            &::before,
+            &::after {
+                background-color: black;  
+            }
+        }
+    }
+}
+
 .slide-in-left {
     animation: slideInFromLeft 3s ease-out forwards;
 }

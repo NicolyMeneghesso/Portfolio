@@ -3,16 +3,51 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 mx-5 ">
         <div class="col">
             <div class="card bg-dark h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <h5 class="card-title text-bg-dark">Meu primeiro blog</h5>
-                <div class="card-body text-bg-dark">
-                    <a href="https://github.com/usuario" class="github-link" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <p class="card-text"></p>
+                 <%= image_tag 'projeto-blog.png', alt: 'Projeto', class: 'card-img-top img-fluid' %>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h5 class="card-title text-bg-dark mb-0" style="font-family:'Poppins';">Meu primeiro blog</h5>
+                        <div class="btn-group">
+                            <button type="button" class="btn-projects" data-bs-toggle="modal" data-bs-target="#projectModal">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <a href="https://github.com/NicolyMeneghesso/Projeto_Blog" class="github-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="card-text text-bg-dark text-projects">Neste projeto, criei um blog simples dedicado à história de Ada Lovelace,
+                         considerada a primeira programadora da história.
+                    </p>
+                    <div class="tech-icons mt-1">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt mx-2"></i>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Meu Primeiro Blog - Ada Lovelace</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="path/to/your/image.jpg" alt="Project Image" class="img-fluid mb-3">
+                    <p>Exploração completa sobre a vida e as contribuições de Ada Lovelace, considerada a primeira programadora da história. Veja as imagens e mais detalhes sobre o projeto.</p>
+                    <!-- Adicione mais imagens ou outros elementos aqui -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="col">
             <div class="card h-100">
                 <img src="..." class="card-img-top" alt="...">
@@ -28,15 +63,6 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                 </div>
             </div>
         </div>

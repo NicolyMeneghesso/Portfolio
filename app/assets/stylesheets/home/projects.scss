@@ -5,19 +5,64 @@
     font-size: 2.8em;
     text-align: center;
 }
+.btn-group {
+    display: flex; 
+    align-items: center; 
+}
 
-.github-link {
-    font-size: 2rem; 
-    color: #7f7e81; 
-    text-decoration: none;
-    transition: color 0.3s ease;
+.btn-projects {
+    background-color: transparent; 
+    color: rgb(190, 77, 186);
+    border: 2px solid rgb(190, 77, 186);
+    border-radius: 50%; 
+    width: 32px; 
+    height: 32px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    margin-right: 10px;
 
     &:hover {
-        color: #535253; 
+        border: 2px solid rgb(245, 150, 242);
+        color: rgb(245, 150, 242);
     }
 
     i {
         display: inline-block;
-        margin-right: 5px; 
+    }
+}
+
+.github-link {
+    font-size: 2.1rem; 
+    color: rgb(127, 126, 129); 
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: rgb(83, 82, 83); 
+    }
+
+    i {
+        display: inline-block;
+    }
+}
+
+.text-projects {
+    text-align: justify;
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+}
+
+.tech-icons {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    color: rgb(128, 128, 128); 
+    font-size: 1.5rem; 
+    
+    i {
+        color: inherit;
     }
 }
