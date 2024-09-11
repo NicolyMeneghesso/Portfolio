@@ -14,4 +14,5 @@ Este portfólio foi desenvolvido para destacar minhas habilidades como desenvolv
 * HTML5
 * CSS3
 * JavaScript
+* Bootstrap
 
