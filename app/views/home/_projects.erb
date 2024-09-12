@@ -3,7 +3,7 @@
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 mx-5 ">
         <div class="col">
             <div class="card bg-dark h-100">
-                 <%= image_tag 'projeto-blog.png', alt: 'Projeto', class: 'card-img-top img-fluid' %>
+                <%= image_tag 'projeto-blog.png', alt: 'Projeto', class: 'card-img-top img-fluid' %>
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <h5 class="card-title text-bg-dark mb-0" style="font-family:'Poppins';">Meu primeiro blog</h5>
@@ -28,21 +28,29 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModalLabel">Meu Primeiro Blog - Ada Lovelace</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="path/to/your/image.jpg" alt="Project Image" class="img-fluid mb-3">
-                    <p>Exploração completa sobre a vida e as contribuições de Ada Lovelace, considerada a primeira programadora da história. Veja as imagens e mais detalhes sobre o projeto.</p>
-                    <!-- Adicione mais imagens ou outros elementos aqui -->
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
+        <div class="modal modal-lg fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-projects">
+                    <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title" id="projectModalLabel">Meu Primeiro Blog</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row g-0">
+                        <div class="col-md-6">
+                            <%= image_tag 'projeto-blog.png', alt: 'Projeto', class: 'img-fluid' %>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Exploração completa sobre a vida e as contribuições de Ada Lovelace, considerada a primeira programadora da história. Veja as imagens e mais detalhes sobre o projeto.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-top-0">
+                        <div class="tech-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt mx-2"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
