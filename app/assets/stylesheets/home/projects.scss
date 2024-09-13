@@ -67,12 +67,54 @@
     }
 }
 
-.modal-projects {
-    background-color: rgb(33, 37, 41); 
-    border-radius: 10px; 
-    width: 80%;
-    max-width: 90%;
+//MODAL
+.modal-projects {   
+    border-radius: 10px;
+    width: 100%;
     height: auto;
-    padding: 20px;
-    margin-left: 5%;
 }
+
+.card-modal {
+    height: 100%;
+    font-family: 'Manrope';
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+
+    .btn-close-modal {
+        background-color: transparent; 
+        border: none; 
+        position: relative;
+        width: 1.2rem;
+        height: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(250, 249, 250); 
+        font-size: 1.6rem;
+        font-family: cursive;
+    }
+
+    .img-modal {
+        width: 100%;  
+        margin-bottom: 2px;  
+    }
+    
+    .github-link-txt {
+        font-size: 1.5rem;
+        color: rgb(127, 126, 129); 
+        text-decoration: none;
+        transition: color 0.3s ease;
+    
+        &:hover {
+            color: rgb(83, 82, 83); 
+        }
+    }
+
+    .text-modal {
+        font-size: 1rem;
+    }
+}
+
