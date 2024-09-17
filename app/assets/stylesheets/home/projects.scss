@@ -5,6 +5,7 @@
     font-size: 2.8em;
     text-align: center;
 }
+
 .btn-group {
     display: flex; 
     align-items: center; 
@@ -67,33 +68,33 @@
     }
 }
 
+.light-mode {
+    .title-projects {
+        color: rgb(39, 44, 49);
+    }
+
+    .card-light {
+        background-color: rgb(156, 97, 151);
+    }
+}
+
+
 //MODAL
 .modal-projects {   
     border-radius: 10px;
-    width: 100%;
-    height: auto;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 10px rgba(246, 138, 212, 0.778);
+    }
 }
 
 .card-modal {
-    height: 100%;
     font-family: 'Manrope';
-    margin: 3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 2%;
+    margin: 5% 6% 0 3%;
 
     .btn-close-modal {
-        background-color: transparent; 
-        border: none; 
-        position: relative;
-        width: 1.2rem;
-        height: 1.2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgb(250, 249, 250); 
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-family: cursive;
     }
 
@@ -115,6 +116,7 @@
 
     .text-modal {
         font-size: 1rem;
+        text-align: justify;
     }
 }
 

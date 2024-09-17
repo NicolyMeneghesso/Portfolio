@@ -2,7 +2,7 @@
     <h1 class="title-projects slide-in-left mb-4">Projetos</h1>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 mx-5 ">
         <div class="col">
-            <div class="card bg-dark h-100">
+            <div class="card card-light bg-dark h-100 slide-in-left">
                 <%= image_tag 'projeto-blog.png', alt: 'Projeto', class: 'card-img-top img-fluid' %>
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-2">
@@ -28,30 +28,33 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true" style="background-color: rgb(1, 3, 12);">
             <div class="modal-dialog modal-xl" style="margin-top: 2vh">
                  <div class="modal-content modal-projects bg-dark text-bg-dark">
-                    <div class="row g-0">
-                        <div class="col-md-4">
+                    <div class="row">
+                        <!-- Imagem do projeto -->
+                        <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <%= image_tag 'projeto-blog-1.png', alt: 'Projeto', class: 'img-fluid img-modal' %>
                         </div>
-                        <div class="col-md-8">
+                        <!-- Conteúdo do projeto -->
+                        <div class="col-12 col-md-8">
                             <div class="card-body card-modal">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <h3>Meu Primeiro Blog</h3>
-                                    <button type="button" class="btn-close-modal" data-bs-dismiss="modal" aria-label="Close">X</button>
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <h3 class="mb-0">Meu Primeiro Blog</h3>
+                                    <button type="button" class="btn-close btn-close-white btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <section class="text-modal">
-                                    <p style="text-align: justify;">Este é o meu primeiro projeto de blog, criado como parte do meu 
+                                <!-- Texto do projeto -->
+                                <section class="text-modal mb-4">
+                                    <p>Este é o meu primeiro projeto de blog, criado como parte do meu 
                                         aprendizado em tecnologias web. Utilizando Ruby on Rails no back-end e HTML/CSS para a estrutura e 
                                         estilização, desenvolvi um blog dedicado a contar a história de Ada Lovelace, a primeira programadora 
                                         da história. O foco está em explorar sua vida, contribuições e legado, proporcionando uma aplicação 
                                         prática das ferramentas e conceitos que venho estudando.</p>
                                 </section>
 
-                                <section class="text-modal">
-                                    <h5>Tema do Blog: Ada Lovelace</h5>
-                                    <p style="text-align: justify;">O blog é dedicado a Ada Lovelace, uma das figuras mais importantes na 
+                                <section class="text-modal mb-5">
+                                    <h5 class="mb-3">Tema do Blog: Ada Lovelace</h5>
+                                    <p>O blog é dedicado a Ada Lovelace, uma das figuras mais importantes na 
                                         história da computação. O conteúdo do blog foca nos seguintes tópicos:</p>
                                     <ul>
                                         <li>História de Ada Lovelace: Uma visão geral de sua vida e realizações.</li>
@@ -61,13 +64,13 @@
                                             como seu trabalho é celebrado até hoje.</li>
                                     </ul>
                                 </section>
-                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                <!-- Ícones e link do projeto -->
+                                <div class="d-flex justify-content-between align-items-center">
                                     <div class="tech-icons">
                                         <i class="fab fa-html5"></i>
                                         <i class="fab fa-css3-alt mx-2"></i>
-                                        <a href="https://github.com/NicolyMeneghesso/Projeto_Blog" class="github-link-txt" target="_blank" rel="noopener noreferrer">PROJETO</a>
                                     </div>
-
+                                    <a href="https://github.com/NicolyMeneghesso/Projeto_Blog" class="github-link-txt" target="_blank" rel="noopener noreferrer">PROJETO</a>
                                 </div>
                             </div>
                         </div>
