@@ -1,108 +1,91 @@
 <div id="projects">
     <h1 class="title-projects slide-in-left mb-4">Projetos</h1>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-5 mx-5 ">
-        <div class="col">
-            <div class="card card-light bg-dark h-100 slide-in-left">
-                <%= image_tag 'projeto-blog.png', alt: 'Projeto', class: 'card-img-top img-fluid img-blog' %>
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                        <h5 class="card-title text-bg-dark mb-0" style="font-family:'Poppins';">Meu primeiro blog</h5>
-                        <div class="btn-group">
-                            <button type="button" class="btn-projects" data-bs-toggle="modal" data-bs-target="#projectModal">
-                                <i class="fas fa-plus"></i>
-                            </button>
-                            <a href="https://github.com/NicolyMeneghesso/Projeto_Blog" class="github-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i>
-                            </a>
+
+        <% @project_cards.each do |card| %>
+            <div class="col">
+                <div class="card card-light bg-dark h-100 slide-in-left">
+                    <%= image_tag 'projeto-blog.png', alt: 'Projeto', class: 'card-img-top img-fluid img-blog' %>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title text-bg-dark mb-0" style="font-family:'Poppins';"><%= card.title %></h5>
+                            <div class="btn-group">
+                                <button type="button" class="btn-projects" data-bs-toggle="modal" data-bs-target="#projectModal-<%= card.id %>">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <a href="<%= card.github_link %>" class="github-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <p class="card-text text-bg-dark text-projects">Neste projeto, criei um blog simples dedicado à história de Ada Lovelace,
-                         considerada a primeira programadora da história.
-                    </p>
-                    <div class="tech-icons mt-1">
-                        <i class="fab fa-html5 mx-1"></i>
-                        <i class="fab fa-css3-alt mx-1"></i>
-                        <i class="fab fa-js-square mx-1"></i>
-                        <i class="fab fa-bootstrap"></i>
+                        <p class="card-text text-bg-dark text-projects">Neste projeto, criei um blog simples dedicado à história de Ada Lovelace,
+                            considerada a primeira programadora da história.
+                        </p>
+                        <div class="tech-icons mt-1">
+                            <i class="fab fa-html5 mx-1"></i>
+                            <i class="fab fa-css3-alt mx-1"></i>
+                            <i class="fab fa-js-square mx-1"></i>
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true" style="background-color: rgb(1, 3, 12);">
-            <div class="modal-dialog modal-xl" style="margin-top: 2vh">
-                 <div class="modal-content modal-projects bg-dark text-bg-dark">
-                    <div class="row">
-                        <!-- Imagem do projeto -->
-                        <div class="col-12 col-md-4 mb-3 mb-md-0">
-                            <%= image_tag 'historia.png', alt: 'Projeto', style: 'width: 110%' %>
-                            <%= image_tag 'parceria.png', alt: 'Projeto', style: 'width: 110%' %>
-                            <%= image_tag 'legado.png', alt: 'Projeto', style: 'width: 110%' %>
-                        </div>
-                        <!-- Conteúdo do projeto -->
-                        <div class="col-12 col-md-8 ps-4">
-                            <div class="card-body card-modal">
-                                <div class="d-flex justify-content-between align-items-center mb-4">
-                                    <h3 class="mb-0">Meu Primeiro Blog</h3>
-                                    <button type="button" class="btn-close btn-close-white btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <!-- Texto do projeto -->
-                                <section class="text-modal mb-4">
-                                    <p>Este é o meu primeiro projeto de blog, criado como parte do meu 
-                                        aprendizado em tecnologias web. Utilizando Ruby on Rails no back-end e HTML/CSS para a estrutura e 
-                                        estilização, desenvolvi um blog dedicado a contar a história de Ada Lovelace, a primeira programadora 
-                                        da história. O foco está em explorar sua vida, contribuições e legado, proporcionando uma aplicação 
-                                        prática das ferramentas e conceitos que venho estudando.</p>
-                                </section>
-
-                                <section class="text-modal mb-5">
-                                    <h5 class="mb-3">Tema do Blog: Ada Lovelace</h5>
-                                    <p>O blog é dedicado a Ada Lovelace, uma das figuras mais importantes na 
-                                        história da computação. O conteúdo do blog foca nos seguintes tópicos:</p>
-                                    <ul>
-                                        <li>História de Ada Lovelace: Uma visão geral de sua vida e realizações.</li>
-                                        <li>Parceria com Charles Babbage: Como Ada colaborou com Babbage no desenvolvimento da "Máquina 
-                                            Analítica" e escreveu o primeiro algoritmo para ser processado por uma máquina. </li>
-                                        <li>Legado e Reconhecimento: O impacto de Ada Lovelace na história da computação e 
-                                            como seu trabalho é celebrado até hoje.</li>
-                                    </ul>
-                                </section>
-                                <!-- Ícones e link do projeto -->
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <div class="tech-icons mt-1">
-                                        <i class="fab fa-html5 mx-1"></i>
-                                        <i class="fab fa-css3-alt mx-1"></i>
-                                        <i class="fab fa-js-square mx-1"></i>
-                                        <i class="fab fa-bootstrap"></i>
+            <!-- Modal -->
+            <div class="modal fade" id="projectModal-<%= card.id %>" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true" style="background-color: rgb(1, 3, 12);">
+                <div class="modal-dialog modal-xl" style="margin-top: 2vh">
+                    <div class="modal-content modal-projects bg-dark text-bg-dark">
+                        <div class="row">
+                            <!-- Imagem do projeto -->
+                            <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                <%= image_tag 'historia.png', alt: 'Projeto', style: 'width: 110%' %>
+                                <%= image_tag 'parceria.png', alt: 'Projeto', style: 'width: 110%' %>
+                                <%= image_tag 'legado.png', alt: 'Projeto', style: 'width: 110%' %>
+                            </div>
+                            <!-- Conteúdo do projeto -->
+                            <div class="col-12 col-md-8 ps-4">
+                                <div class="card-body card-modal">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h3 class="mb-0">Meu Primeiro Blog</h3>
+                                        <button type="button" class="btn-close btn-close-white btn-close-modal" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <a href="https://github.com/NicolyMeneghesso/Projeto_Blog" class="github-link-txt" target="_blank" rel="noopener noreferrer">PROJETO</a>
+                                    <!-- Texto do projeto -->
+                                    <section class="text-modal mb-4">
+                                        <p>Este é o meu primeiro projeto de blog, criado como parte do meu 
+                                            aprendizado em tecnologias web. Utilizando Ruby on Rails no back-end e HTML/CSS para a estrutura e 
+                                            estilização, desenvolvi um blog dedicado a contar a história de Ada Lovelace, a primeira programadora 
+                                            da história. O foco está em explorar sua vida, contribuições e legado, proporcionando uma aplicação 
+                                            prática das ferramentas e conceitos que venho estudando.</p>
+                                    </section>
+
+                                    <section class="text-modal mb-5">
+                                        <h5 class="mb-3">Tema do Blog: Ada Lovelace</h5>
+                                        <p>O blog é dedicado a Ada Lovelace, uma das figuras mais importantes na 
+                                            história da computação. O conteúdo do blog foca nos seguintes tópicos:</p>
+                                        <ul>
+                                            <li>História de Ada Lovelace: Uma visão geral de sua vida e realizações.</li>
+                                            <li>Parceria com Charles Babbage: Como Ada colaborou com Babbage no desenvolvimento da "Máquina 
+                                                Analítica" e escreveu o primeiro algoritmo para ser processado por uma máquina. </li>
+                                            <li>Legado e Reconhecimento: O impacto de Ada Lovelace na história da computação e 
+                                                como seu trabalho é celebrado até hoje.</li>
+                                        </ul>
+                                    </section>
+                                    <!-- Ícones e link do projeto -->
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <div class="tech-icons mt-1">
+                                            <i class="fab fa-html5 mx-1"></i>
+                                            <i class="fab fa-css3-alt mx-1"></i>
+                                            <i class="fab fa-js-square mx-1"></i>
+                                            <i class="fab fa-bootstrap"></i>
+                                        </div>
+                                        <a href="https://github.com/NicolyMeneghesso/Projeto_Blog" class="github-link-txt" target="_blank" rel="noopener noreferrer">PROJETO</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Em breve</h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Em breve</h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
+        <% end %>
     </div>        
 </div>

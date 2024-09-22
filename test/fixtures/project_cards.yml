@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  image: MyString
+  description: MyText
+  github_link: MyString
+  modal_image: MyString
+  modal_description: MyText
+
+two:
+  title: MyString
+  image: MyString
+  description: MyText
+  github_link: MyString
+  modal_image: MyString
+  modal_description: MyText

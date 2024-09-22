@@ -9,6 +9,11 @@ class HomeController < ApplicationController
       { image: 'logo-github.png', alt: 'Logo-github', name: 'GitHub' },
       { image: 'logo-autocad.png', alt: 'Logo-autocad', name: 'AutoCad' },
     ]
+
+    @project_cards = ProjectCard.all
+
+    # ProjectCard.create(title: "Batatinha")
+    # ProjectCard.where(title: 'Batatinha')&.delete_all
   end
 end
 

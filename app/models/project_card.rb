@@ -1,0 +1,2 @@
+class ProjectCard < ApplicationRecord
+end
