@@ -117,13 +117,9 @@
     }
 }
 
-.image-modal {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px !important;
-    padding: 5px;
-    box-sizing: border-box;
+.img-modal {
+    border-radius: 10px;
+    padding: 1px 0 2px 3px;
 }
 
 .card-modal {
