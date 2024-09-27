@@ -147,3 +147,81 @@
         text-align: justify;
     }
 }
+
+//RESPONSIVIDADE
+
+@media only screen and (min-width: 767px) and (max-width: 990px) {
+    .btn-group {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .btn-projects {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .modal-projects {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .img-modal {
+        display: none;
+    }
+
+    .card-modal {
+        margin: 2% 2% 0 0; 
+    }
+
+    .btn-close-modal {
+        font-size: 1.2rem; 
+    }
+
+    .text-modal {
+        font-size: 0.9rem; 
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+    .title-projects {
+        margin-top: 14%;
+    }
+
+    .img-modal {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 499.5px) {
+    .title-projects {
+        font-size: 2.1rem; 
+        margin-top: 14%;
+    }
+
+    .btn-projects {
+        width: 24px; 
+        height: 24px;
+        font-size: 0.9rem; 
+    }
+
+    .text-projects {
+        font-size: 0.75rem; 
+    }
+
+    .modal-projects {
+        width: 97% !important; 
+        margin: 0;
+    }
+
+    .text-modal {
+        font-size: 0.85rem !important;
+        padding-right: 3%;
+    }
+
+    .img-modal {
+        display: none;
+    }
+}
