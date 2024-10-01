@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_09_22_002842) do
+ActiveRecord::Schema[7.0].define(version: 2024_10_01_215951) do
   create_table "project_cards", force: :cascade do |t|
     t.string "title"
     t.string "image"
@@ -18,6 +18,13 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_22_002842) do
     t.string "github_link"
     t.string "modal_image"
     t.text "modal_description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "skill_cards", force: :cascade do |t|
+    t.string "image"
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

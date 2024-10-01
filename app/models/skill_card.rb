@@ -1,0 +1,2 @@
+class SkillCard < ApplicationRecord
+end
