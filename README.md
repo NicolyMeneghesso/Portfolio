@@ -1,6 +1,6 @@
 # Portfólio
 
-Este portfólio foi o meu primeiro grande projeto, no qual desenvolvi várias versões do front-end até alcançar o resultado final. Durante o processo, consegui aprimorar meus conhecimentos em HTML, SCSS e JavaScript, além de iniciar meus estudos em Ruby on Rails. 
+Este portfólio foi o meu primeiro grande projeto, no qual desenvolvi diversas versões do front-end até chegar ao resultado final. Durante o processo, aprimorei meus conhecimentos em HTML, SCSS e JavaScript, além de iniciar meus estudos em Ruby on Rails. Neste projeto, implementei o modo claro e escuro, além de aplicar meus primeiros estudos em banco de dados, proporcionando um contato inicial com a gestão e manipulação de dados dentro de uma aplicação real.
 
 ## Estrutura e Funcionalidades
 
@@ -17,4 +17,13 @@ Este portfólio foi o meu primeiro grande projeto, no qual desenvolvi várias ve
 * JavaScript
 * Bootstrap
 
-![Capa do Projeto](./images/capa.jpg)
+![Capa do Projeto](./app/assets/images/capa.jpg)
+![Sobre im](./app/assets/images/about.jpg)
+![Tecnologias](./app/assets/images/skills.jpg)
+![Projetos](./app/assets/images/projects.jpg)
+![Modal](./app/assets/images/modal.jpg)
+
+
+
+
+
