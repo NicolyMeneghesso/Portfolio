@@ -2,7 +2,7 @@
 
 Este portfólio foi o meu primeiro grande projeto, no qual desenvolvi diversas versões do front-end até chegar ao resultado final. Durante o processo, aprimorei meus conhecimentos em HTML, SCSS e JavaScript, além de iniciar meus estudos em Ruby on Rails. Neste projeto, implementei o modo claro e escuro, além de aplicar meus primeiros estudos em banco de dados, proporcionando um contato inicial com a gestão e manipulação de dados dentro de uma aplicação real.
 
-## Estrutura e Funcionalidades
+## Estrutura
 
 * Sobre Mim: Uma breve introdução sobre minha trajetória e motivações na área de desenvolvimento.
 * Linguagens e Tecnologias: Apresenta as principais ferramentas e tecnologias que domino, com exemplos práticos e demonstrações das minhas habilidades técnicas.
